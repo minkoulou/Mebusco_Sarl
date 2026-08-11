@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-navy: #0b1e3f;
+  --color-carmin: #c8112e;
+  --color-parchemin: #f4f3f1;
+}
+ 
