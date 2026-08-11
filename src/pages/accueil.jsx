@@ -154,7 +154,7 @@ export default function Accueil() {
           <div className="relative md:col-span-5 hover:scale-105 transition-all duration-200">
             {/* Remplace par la vraie photo du fondateur (asset non fourni dans la maquette) */}
             <img
-              src="/mebenga.jpeg"
+              src="/mebenga2.jpeg"
               alt="Mebenga Etoundi Joseph, fondateur et expert consultant chez Mebusco"
               className="h-105 w-full object-cover md:h-130 "
             />
