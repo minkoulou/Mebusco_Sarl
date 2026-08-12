@@ -3,6 +3,7 @@ import { NavBar } from "../components/navbar";
 import Footer from "../components/footer";
 import OtherDimensions from "../components/otherDimension";
 import { quickTabs, sections } from "../data/dimensions";
+import { Whatsapp } from "../components/whatsapp";
 
 function ListBox({ items }) {
   return (
@@ -94,13 +95,15 @@ export default function DimensionScientifique() {
       </nav>
 
       {/* ---------- SECTIONS DE SERVICES ---------- */}
+
       <div className="mx-auto max-w-6xl px-4 py-10 md:px-8">
         {sections.map((section) => {
           const Icon = section.icon;
           return (
-            <section key={section.id} id={section.id} className="scroll-mt-20 pb-10">
+            <section key={section.id} id={section.id} className="hover:scale-101 hover:-translate-4 hover:drop-shadow-sm hover:drop-shadow-black
+             hover:shadow-2xl transition-all hover:duration-500 scroll-mt-20 pb-10">
               <div className="flex items-start gap-3">
-                <Icon className="mt-1 h-5 w-5 shrink-0 text-carmin" strokeWidth={1.6} />
+                <Icon className="mt-1 h-5 w-5 shrink-0 text-carmin" strokeWidth={1.8} />
                 <h2 className="font-serif text-lg font-bold text-navy dark:text-white md:text-xl">
                   {section.title}
                 </h2>
@@ -153,14 +156,16 @@ export default function DimensionScientifique() {
       </div>
 
       {/* Remplace par la vraie photo (asset non fourni) */}
+    <div className="max-w-screen  mx-auto">
       <img
-        src="/images/salle-reunion-mebusco.jpg"
+        src="/reunion.jpeg"
         alt="Réunion stratégique avec l'équipe Mebusco"
-        className="h-56 w-full object-cover md:h-80"
+        className="h-56 w-full object-cover contrast-70 hover:contrast-100 hover:scale-99 transition-all duration-300 md:h-80"
       />
+     </div> 
 
       <OtherDimensions currentKey="scientifique" />
-
+       <Whatsapp/>
       <Footer />
     </div>
   );

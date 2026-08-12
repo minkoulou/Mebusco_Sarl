@@ -1,10 +1,11 @@
-import { ArrowRight, MapPin, Phone, Mail } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import {NavBar} from "../components/navbar";
 import { navLinks } from "../data/util";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Button from '../components/boutons'
 import Footer from "../components/footer";
+import { Whatsapp } from "../components/whatsapp";
 // import {}
 
 const dimensionCards = [
@@ -129,7 +130,7 @@ export default function Accueil() {
               <Link
                 key={card.key}
                 to={card.href}
-                className="mb-5 dark:border-slate-500 dark:bg-slate-900 block border-l-4 hover:bg-slate-300 border-slate-700 bg-white p-6 shadow-sm transition-shadow hover:shadow-md md:mb-0"
+                className="mb-5 dark:border-slate-500 dark:bg-slate-900 block border-l-4  border-slate-700 bg-white p-6 shadow-sm transition-shadow hover:shadow-md md:mb-0"
               >
                 <div className="flex items-start justify-between">
                   <span className="flex dark:bg-slate-700 dark:text-white h-11 w-11 items-center justify-center bg-parchemin text-navy">
@@ -253,7 +254,8 @@ export default function Accueil() {
 
         </div>
       </section>
-
+       <Whatsapp/>
+    
        <Footer/>
       {/* Rappel : navLinks pilote aussi la tab bar mobile rendue dans <Navbar /> */}
       <span className="sr-only">{navLinks.length} sections principales</span>
