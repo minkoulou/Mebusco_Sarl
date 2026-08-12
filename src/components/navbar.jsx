@@ -1,7 +1,10 @@
 import { useState } from "react";
-import { Menu, X, CircleUserRound } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { navLinks } from "../data/util";
 import { Link } from "react-router-dom";
+import ThemeToggle from "./Themetoggle";
+// import Button from "./boutons";
+
 
 /**
  * Navbar responsive unique.
@@ -16,7 +19,7 @@ import { Link } from "react-router-dom";
  * 
  * */ 
  
-export default function NavBar({ currentPath = "/" }) {
+export  function NavBar({ currentPath = "/" }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   return (
@@ -24,25 +27,25 @@ export default function NavBar({ currentPath = "/" }) {
       {/* ---------- HEADER (mobile + desktop) ---------- */}
       <header className="sticky top-0 z-40 bg-navy text-white">
 
-        <div className="mx-auto flex h-16 max-w-8xl items-center justify-between px-4 md:px-8">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-8">
           
           {/* Logo */}
 
           <Link to={"/"} className="flex items-center gap-2.5 md:flex-1">
             <img src="/logo.jpeg" className="h-8 w-8 rounded-xl" />
-            <span className="text-lg font-bold tracking-wide">MEBUSCO</span>
+            <span className="text-lg font-bold tracking-wide">MEBUSCO SARL </span>
           </Link>
 
           {/* Liens horizontaux — desktop uniquement */}
-          <nav className="hidden md:flex md:items-center md:justify-around bg-red-800 md:flex-3 mx-8">
+          <nav className="hidden md:flex md:items-center md:text-xs sm:gap-4 sm:px-4 md:justify-around  md:flex-3 ">
             {navLinks.map((link) => {
               const isActive = currentPath === link.path;
               return (
                 <Link
                   key={link.Key}
                   to={`${link.path}`}
-                  className={`text-sm font-medium tracking-wide transition-colors hover:text-white ${
-                    isActive ? "text-white" : "text-white/70"
+                  className={`text-sm  tracking-wide transition-colors duration-400 hover:text-white  hover:font-bold ${
+                    isActive ? "text-white font-bold text-shadow-white text-shadow-xs" : "text-white/70"
                   }`}
                   aria-current={isActive ? "page" : undefined}
                 >
@@ -53,25 +56,21 @@ export default function NavBar({ currentPath = "/" }) {
           </nav>
 
           {/* CTA — desktop uniquement */}
-          <div className="hidden md:flex md:items-center md:gap-3 md:flex-1">
+          <div className="hidden md:flex md:items-center justify-end mr-8">
             <Link
               to={"/contact"}
-              className="rounded-sm border border-white/30 px-4 py-2 text-sm font-semibold tracking-wide hover:border-white"
+              className="rounded-sm border active:scale-95 transition-scale duration-300 border-white/30 px-4 py-2 text-sm font-semibold tracking-wide hover:border-white"
             >
               Contact
             </Link>
-            
-            <Link
-              to={"/nos-services"}
-              className="rounded-sm bg-carmin px-4 py-2 text-sm font-semibold tracking-wide hover:brightness-110"
-            >
-              Nos services
-            </Link>
+
+          <ThemeToggle className="ml-4" />
 
           </div>
 
           {/* Actions — mobile uniquement */}
           <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
             <button
               type="button"
               aria-label="Ouvrir le menu"
@@ -79,22 +78,16 @@ export default function NavBar({ currentPath = "/" }) {
               onClick={() => setDrawerOpen(true)}
               className="flex h-9 w-9 items-center justify-center"
             >
-              <Menu className="h-5.5 w-5.5" strokeWidth={1.8} />
+              <Menu className="h-5.5 w-5.5  dark:text-white" strokeWidth={1.8} />
             </button>
-            <button
-              type="button"
-              aria-label="Mon compte"
-              className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10"
-            >
-              <CircleUserRound className="h-5 w-5" strokeWidth={1.6} />
-            </button>
+            
           </div>
         </div>
       </header>
 
       {/* ---------- TIROIR MENU — mobile uniquement ----------
-          Ouvert par le burger : reprend les mêmes navLinks + les CTA,
-          pour les liens secondaires qui n'ont pas leur place dans la tab bar. */}
+          Ouvert par le burger : reprend les mêmes navLinks */}
+
       {drawerOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
           <button
@@ -103,7 +96,7 @@ export default function NavBar({ currentPath = "/" }) {
             className="absolute inset-0 bg-navy/60"
           />
 
-          <div className="absolute right-0 top-0 flex h-full w-72 max-w-[85vw] flex-col bg-navy px-6 py-5 text-white shadow-xl">
+          <div className="absolute right-0 top-0 flex h-full w-72 max-w-[85vw] flex-col backdrop-blur-xl px-6 py-5 text-white shadow-xl">
             
             <div className="flex items-center justify-between">
               <span className="text-base font-bold tracking-wide">MENU</span>
@@ -124,7 +117,7 @@ export default function NavBar({ currentPath = "/" }) {
                   key={link.Key}
                   to={`${link.path}`}
                   onClick={() => setDrawerOpen(false)}
-                  className="border-b border-white/10 py-3 text-sm font-medium tracking-wide text-white/85"
+                  className="border-b border-white/10 hover:font-bold transition-font duration-200 py-3 text-sm font-medium tracking-wide text-white/85"
                 >
                   {link.label}
                 </Link>
@@ -154,8 +147,8 @@ export default function NavBar({ currentPath = "/" }) {
 
       {/* ---------- TAB BAR BASSE — mobile uniquement ---------- */}
       <nav
-        className="fixed inset-x-0 bottom-0 z-40 flex h-16 items-stretch border-t border-black/5 bg-parchemin md:hidden"
-        aria-label="Navigation principale"
+        className="fixed inset-x-0 bottom-0 z-40 dark:bg-slate-900 flex h-16 items-stretch border-t border-black/5 bg-parchemin md:hidden"
+        aria-label="Navigation principale "
       >
         {navLinks.map((link) => {
           const Icon = link.icon;
@@ -169,7 +162,7 @@ export default function NavBar({ currentPath = "/" }) {
                 isActive ? "text-carmin" : "text-slate-500"
               }`}
             >
-              <Icon className="h-5.5 w-5.5" strokeWidth={1.6} />
+              <Icon className="h-5.5 w-5.5  dark:text-white" strokeWidth={1.6} />
               <span className="leading-none">{link.shortLabel}</span>
             </Link>
           );

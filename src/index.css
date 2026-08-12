@@ -6,3 +6,18 @@
   --color-parchemin: #f4f3f1;
 }
  
+@custom-variant dark (&:where(.dark, .dark *));
+ 
+
+@layer base {
+  :root {
+    --theme-transition-duration: 350ms;
+  }
+ 
+  * {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: ease;
+    transition-duration: var(--theme-transition-duration);
+  }
+}
+ 
