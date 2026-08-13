@@ -30,7 +30,7 @@ export const navLinks = [
         Key:"endogène",
         label:"Dimension-culto-endogène",
         shortlabel:"culto-endogène",
-        path:"/dimension-culturelle-endogene",
+        path:"/dimension-culto-endogene",
         icon:Share2
     },
 

@@ -1,9 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { NavBar } from "../components/navbar";
-import Footer from "../components/Footer";
-import OtherDimensions from "../components/otherDimensions";
+import Footer from "../components/footer";
+import OtherDimensions from "../components/otherDimension";
 import { endogeneCards } from "../data/dimensionEndogene";
+import {Whatsapp} from '../components/whatsapp'
 
 function EndogeneCard({ card }) {
   const Icon = card.icon;
@@ -131,7 +132,7 @@ export default function DimensionEndogene() {
           formation: "Pôle Formation",
         }}
       />
-
+      <Whatsapp/>
       <Footer />
     </div>
   );

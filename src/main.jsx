@@ -6,6 +6,9 @@ import './index.css'
 import Accueil from './pages/accueil.jsx'
 import {Scientifique} from './pages/scientifique.jsx'
 import {Spirituelle} from './pages/spirituelle.jsx'
+import CultoEndogene from './pages/culto-endogene.jsx'
+import Formation from './pages/formation.jsx'
+
 
 
 const routes=createBrowserRouter([
@@ -23,10 +26,15 @@ const routes=createBrowserRouter([
     path:"/dimension-spirituelle",
     element:<Spirituelle/>
   },
-  
+
  {
     path:"/dimension-culto-endogene",
-    element:<Spirituelle/>
+    element:<CultoEndogene/>
+  },
+
+   {
+    path:"/formation",
+    element:<Formation/>
   }
   
 ])

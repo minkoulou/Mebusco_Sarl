@@ -124,21 +124,13 @@ export  function NavBar({ currentPath = "/" }) {
               ))}
             </nav>
 
-            <div className="mt-auto flex flex-col gap-3 pt-6">
+            <div className="flex flex-col gap-3 pt-6 mt-12">
               <Link
                 to={"/contact"}
-                className="rounded-sm border border-white/30 px-4 py-3 text-center text-sm font-semibold tracking-wide"
+                className="rounded-full border border-white/30 py-3 text-center text-sm font-semibold tracking-wide"
               >
                 Contact
               </Link>
-
-              <Link
-                to="/nos-services"
-                className="rounded-sm bg-carmin px-4 py-3 text-center text-sm font-semibold tracking-wide"
-              >
-                Nos services
-              </Link>
-
             </div>
           </div>
         </div>
