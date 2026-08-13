@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import OtherDimensions from "../components/otherDimension";
 import { quickTabs, sections } from "../data/dimensions";
 import { Whatsapp } from "../components/whatsapp";
+import Button from "../components/boutons";
 
 function ListBox({ items }) {
   return (
@@ -33,7 +34,7 @@ function FrameworkGrid({ items }) {
   );
 }
 
-export default function DimensionScientifique() {
+export  function Scientifique() {
   const location = useLocation();
 
   return (
@@ -165,6 +166,10 @@ export default function DimensionScientifique() {
      </div> 
 
       <OtherDimensions currentKey="scientifique" />
+     <div className="w-full md:w-1/3 mx-auto p-4">  
+      <Button  chemin='dimension-spirituelle' nom='demander un devis' bg='bg-white' color='text-black'/>
+     </div> 
+
        <Whatsapp/>
       <Footer />
     </div>
