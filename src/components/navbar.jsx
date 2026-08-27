@@ -44,7 +44,7 @@ export  function NavBar({ currentPath = "/" }) {
                 <Link
                   key={link.Key}
                   to={`${link.path}`}
-                  className={`text-sm  tracking-wide transition-colors duration-400 hover:text-white  hover:font-bold ${
+                  className={`text-sm  tracking-wide transition-all hover:duration-400 hover:text-white  hover:font-bold ${
                     isActive ? "text-white font-bold text-shadow-white text-shadow-xs" : "text-white/70"
                   }`}
                   aria-current={isActive ? "page" : undefined}

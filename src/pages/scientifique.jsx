@@ -166,7 +166,7 @@ export  function Scientifique() {
      </div> 
 
       <OtherDimensions currentKey="scientifique" />
-     <div className="w-full md:w-1/3 mx-auto p-4">  
+     <div className="w-full md:w-1/4 mx-auto p-4">  
       <Button  chemin='dimension-spirituelle' nom='demander un devis' bg='bg-white' color='text-black'/>
      </div> 
 

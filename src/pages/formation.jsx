@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { CircleCheck, Mail } from "lucide-react";
+import { CircleCheck } from "lucide-react";
 import { NavBar } from "../components/navbar";
 import Footer from "../components/footer";
 import OtherDimensions from "../components/otherDimension";
@@ -83,8 +83,8 @@ export default function Formation() {
         <div className="mt-8 grid gap-6 md:grid-cols-2">
 
           {/* Carte "Packages" */}
-          
-          <div className="rounded-2xl bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl dark:bg-slate-900">
+
+          <div className="rounded-2xl bg-white p-6 transition-all duration-300 hover:-translate-4 drop-shadow-black drop-shadow-xl dark:bg-slate-900">
             <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-parchemin dark:bg-slate-800">
               <PackagesIcon className="h-5 w-5 text-navy dark:text-white" strokeWidth={1.6} />
             </span>
@@ -102,16 +102,11 @@ export default function Formation() {
                 </li>
               ))}
             </ul>
-            <Link
-              to="/contact"
-              className="mt-6 block bg-navy py-3 text-center text-xs font-bold uppercase tracking-wide text-white hover:brightness-110 dark:bg-slate-950"
-            >
-              {formats.packages.ctaLabel}
-            </Link>
+
           </div>
 
           {/* Carte "Sur-mesure" */}
-          <div className="rounded-2xl bg-navy p-6 dark:bg-slate-950">
+          <div className="rounded-2xl bg-navy p-6 dark:bg-slate-950 transition-all duration-300 hover:scale-95 drop-shadow-black drop-shadow-xl">
             <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10">
               <SurMesureIcon className="h-5 w-5 text-white" strokeWidth={1.6} />
             </span>
@@ -133,7 +128,7 @@ export default function Formation() {
             </div>
             <Link
               to="/contact"
-              className="mt-6 block bg-carmin py-3 text-center text-xs font-bold uppercase tracking-wide text-white hover:brightness-110"
+              className="mt-6 block bg-carmin py-3 rounded-xl text-center text-xs font-bold uppercase tracking-wide text-white hover:brightness-120 "
             >
               {formats.surMesure.ctaLabel}
             </Link>
@@ -175,14 +170,14 @@ export default function Formation() {
       </div>
 
       {/* ---------- IMAGE + CITATION ---------- */}
-      <div className="relative">
+      <div className="relative hover:duration-300 transition-all hover:scale-101">
         {/* Remplace par la vraie photo (asset non fourni) */}
         <img
-          src="/images/formation-mebusco.jpg"
+          src="/formation.jpeg"
           alt="Session de formation Mebusco"
-          className="h-64 w-full object-cover md:h-96"
+          className="h-64 w-full object-cover md:h-96 "
         />
-        <div className="absolute inset-0 flex items-center justify-center bg-navy/60 px-6">
+        <div className="absolute inset-0 flex items-center justify-center contrast-75 hover:contrast-50 hover:duration-300 transition-all bg-navy/60 px-6">
           <p className="max-w-lg text-center font-serif text-lg italic text-white md:text-2xl">
             « Le savoir est le seul capital qui s'accroît lorsqu'on le
             partage. »
@@ -197,7 +192,7 @@ export default function Formation() {
         labels={{
           scientifique: "Pôle Scientifique",
           Spirituelle: "Pôle Spirituel",
-          "endogène": "Pôle Culto-Endogène",
+          endogène: "Pôle Culto-Endogène",
         }}
       />
       <Whatsapp/>

@@ -28,8 +28,8 @@ export default function Footer() {
           </li>
           <li className="flex items-center gap-3">
             <Mail className="h-4.5 w-4.5 text-carmin" strokeWidth={1.6} />
-            <a href="mailto:contact@mebusco.com" className="hover:underline">
-              contact@mebusco.com
+            <a href="mailto:mebuscosarl@gmail.com" className="hover:underline">
+              mebuscosarl@gmail.com
             </a>
           </li>
         </ul>

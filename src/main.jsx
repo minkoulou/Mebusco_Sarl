@@ -8,6 +8,7 @@ import {Scientifique} from './pages/scientifique.jsx'
 import {Spirituelle} from './pages/spirituelle.jsx'
 import CultoEndogene from './pages/culto-endogene.jsx'
 import Formation from './pages/formation.jsx'
+import Contact from './pages/contact.jsx'
 
 
 
@@ -35,8 +36,13 @@ const routes=createBrowserRouter([
    {
     path:"/formation",
     element:<Formation/>
+  },
+
+
+   {
+    path:"/contact",
+    element:<Contact/>
   }
-  
 ])
 
 createRoot(document.getElementById('root')).render(

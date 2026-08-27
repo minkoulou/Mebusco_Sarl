@@ -168,9 +168,9 @@ export default function Accueil() {
           <div className="relative md:col-span-5 hover:scale-105 transition-all duration-200">
         
             <img
-              src="/mebenga2.jpeg"
+              src="/mebenga.jpeg"
               alt="Mebenga Etoundi Joseph, fondateur et expert consultant chez Mebusco"
-              className="h-105 w-full object-cover md:h-130 rounded-xs shadow-2xl shadow-navy"
+              className="h-105 w-full object-cover md:h-140 rounded-xs shadow-2xl shadow-navy"
             />
             
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 to-transparent p-5">
@@ -236,24 +236,6 @@ export default function Accueil() {
         </div>
       </section>
 
-      {/* ---------- ILS NOUS FONT CONFIANCE ---------- */}
-     
-      <section className="bg-parchemin px-4 dark:bg-slate-800 py-14 text-center md:px-8">
-        <p className="text-xs dark:text-slate-500 font-semibold uppercase tracking-[0.2em] text-slate-400">
-          Ils nous font confiance
-        </p>
-        <div className="mx-auto mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-4">
-          {trustLogos.map((name) => (
-            <div
-              key={name}
-              className="flex dark:bg-slate-700 h-14 w-40 items-center justify-center bg-slate-300 text-xs font-semibold uppercase tracking-wide text-white"
-            >
-              {name}
-            </div>
-          ))}
-
-        </div>
-      </section>
        <Whatsapp/>
     
        <Footer/>

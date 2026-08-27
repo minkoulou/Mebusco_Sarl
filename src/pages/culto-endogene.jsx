@@ -11,7 +11,7 @@ function EndogeneCard({ card }) {
 
   if (card.variant === "dark-image") {
     return (
-      <div className="overflow-hidden rounded-2xl bg-navy transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl dark:bg-slate-950">
+      <div className="overflow-hidden rounded-2xl bg-navy transition-all duration-300 hover:-translate-y-0.5  hover:drop-shadow-black hover:drop-shadow-sm dark:bg-slate-950">
         <div className="p-6 pb-4">
           <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-carmin">
             <Icon className="h-5.5 w-5.5 text-white" strokeWidth={1.6} />
@@ -23,7 +23,7 @@ function EndogeneCard({ card }) {
         <img
           src={card.image}
           alt={card.imageAlt}
-          className="h-48 w-full object-cover"
+          className="h-48 w-full object-cover contrast-50 hover:contrast-90 hover:duration-300 transition-all"
         />
       </div>
     );

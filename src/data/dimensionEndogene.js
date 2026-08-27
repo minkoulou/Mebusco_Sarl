@@ -14,7 +14,7 @@ export const endogeneCards = [
     icon: Landmark,
     variant: "dark-image",
     title: "Formation d'un responsable sélectionné à l'entretien du musée de l'entreprise",
-    image: "/images/responsable-musee-mebusco.jpg",
+    image: "/entretien.jpeg",
     imageAlt: "Responsable formé à l'entretien du musée de l'entreprise",
   },
   {
