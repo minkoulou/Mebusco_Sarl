@@ -55,6 +55,10 @@ export default function Contact() {
         </div>
       </section>
 
+       <div className="mx-auto max-w-xl px-4 pb-14 md:px-8">
+        <ContactForm />
+      </div>
+
       {/* ---------- CARTES INFO ---------- */}
       <div className="mx-auto max-w-6xl px-4 py-8 md:px-8">
         <div className="flex flex-col gap-4 md:flex-row">
@@ -92,9 +96,6 @@ export default function Contact() {
         </div>
       </div>
       {/* ---------- FORMULAIRE ---------- */}
-      <div className="mx-auto max-w-xl px-4 pb-14 md:px-8">
-        <ContactForm />
-      </div>
       <Footer />
       <Whatsapp/>
     </div>

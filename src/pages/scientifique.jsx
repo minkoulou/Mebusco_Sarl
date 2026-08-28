@@ -156,7 +156,6 @@ export  function Scientifique() {
         })}
       </div>
 
-      {/* Remplace par la vraie photo (asset non fourni) */}
     <div className="max-w-screen  mx-auto">
       <img
         src="/reunion.jpeg"
@@ -167,7 +166,7 @@ export  function Scientifique() {
 
       <OtherDimensions currentKey="scientifique" />
      <div className="w-full md:w-1/4 mx-auto p-4">  
-      <Button  chemin='dimension-spirituelle' nom='demander un devis' bg='bg-white' color='text-black'/>
+      <Button  chemin='/contact' nom='demander un devis' bg='bg-white' color='text-black'/>
      </div> 
 
        <Whatsapp/>

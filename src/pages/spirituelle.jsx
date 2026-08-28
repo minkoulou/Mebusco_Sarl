@@ -146,7 +146,7 @@ export  function Spirituelle() {
           <div
             className="flex items-center justify-center pt-4"
           >
-            <Button  chemin='dimension-spirituelle' nom='demander un devis' bg='bg-white' color='text-black'/>
+            <Button  chemin='/contact' nom='demander un devis' bg='bg-white' color='text-black'/>
           </div>
         </div>
       </div>
