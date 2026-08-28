@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { Send, Loader2, CircleCheck } from "lucide-react";
 import { contactServices } from "../data/contact";
 import {paymentMethods} from "../data/contact"
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -11,7 +11,7 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export  function ContactForm() {
 
-  const naviguate=useNavigate()
+  // const naviguate=useNavigate()
   const formRef = useRef(null);
   const [status, setStatus] = useState("idle"); // idle | loading | sent | error
 
@@ -24,13 +24,12 @@ export  function ContactForm() {
       .then(() => {
           formRef.current.reset();
           setStatus("sent");
+          // setTimeout(()=>{naviguate('/')},5000)
       })
       .catch((err) => {
         console.error("Erreur EmailJS:", err);
         setStatus("error");
       });
-
-      setTimeout(()=>{naviguate('/')},5000)
 
   }
 
@@ -139,11 +138,11 @@ export  function ContactForm() {
             <select
               id="paiement"
               name="paiement"
-              // defaultValue={contactServices[0]}
+              defaultValue={paymentMethods[0].label}
               className="mt-1.5 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-navy dark:border-slate-700 dark:bg-slate-900 dark:text-white"
             >
               {paymentMethods.map((m) => (
-                <option key={m.value} value={m.value}>
+                <option key={m.valeur} value={m.valeur}>
                   {m.label}
                 </option>
               ))}

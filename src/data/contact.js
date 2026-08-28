@@ -8,8 +8,8 @@ export const contactServices = [
 ];
 
 export const paymentMethods = [
-  { value: "MoMo", label: "Mobile Money (MTN )" },
-  { value: "OM", label: "Orange Money (Orange)" },
-  { value: "virement", label: "Virement bancaire" },
+  { valeur: "MoMo", label: "Mobile Money (MTN )" },
+  { valeur: "OM", label: "Orange Money (Orange)" },
+  { valeur: "virement", label: "Virement bancaire" },
 ];
 

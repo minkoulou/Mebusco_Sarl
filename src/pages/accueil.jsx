@@ -43,7 +43,6 @@ const dimensionCards = [
   },
 ];
 
-const trustLogos = ["Partenaire A", "Institution B", "Groupe C"];
 
 export default function Accueil() {
 

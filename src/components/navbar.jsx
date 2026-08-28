@@ -126,7 +126,7 @@ export  function NavBar({ currentPath = "/" }) {
 
             <div className="flex flex-col gap-3 pt-6 mt-12">
               <Link
-                to={"/contact"}
+                to="/contact"
                 className="rounded-full border border-white/30 py-3 text-center text-sm font-semibold tracking-wide"
               >
                 Contact
