@@ -4,6 +4,8 @@ import { NavBar } from "../components/navbar";
 import Footer from "../components/footer";
 import {Whatsapp} from "../components/whatsapp";
 import {ContactForm} from '../components/contactForm'
+import { Seo, breadcrumbJsonLd } from "../components/seo";
+
 
 const infoCards = [
   {
@@ -28,6 +30,17 @@ export default function Contact() {
 
   return (
     <div className="bg-white pb-16 dark:bg-slate-900 md:pb-0">
+      
+        <Seo
+        title="Contact"
+        description="Contactez Mebusco SARL à Yaoundé pour un devis de conseil en entreprise : téléphone, WhatsApp, email ou formulaire en ligne. Réponse sous 24h."
+        path="/contact"
+        jsonLd={breadcrumbJsonLd([
+          { name: "Accueil", path: "/" },
+          { name: "Contact", path: "/contact" },
+        ])}
+      />
+
       <NavBar currentPath={location.pathname} />
 
       {/* ---------- FIL D'ARIANE ---------- */}

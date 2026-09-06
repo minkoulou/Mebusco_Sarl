@@ -5,6 +5,8 @@ import OtherDimensions from "../components/otherDimension";
 import { quickTabs, sections } from "../data/dimensions";
 import { Whatsapp } from "../components/whatsapp";
 import Button from "../components/boutons";
+import { Seo, breadcrumbJsonLd } from "../components/seo";
+
 
 function ListBox({ items }) {
   return (
@@ -39,6 +41,17 @@ export  function Scientifique() {
 
   return (
     <div className="bg-white pb-16 dark:bg-slate-900 md:pb-0">
+      
+      <Seo
+        title="Dimension scientifique"
+        description="La dimension scientifique de l'entreprise selon Mebusco SARL : faisabilité technique, rentabilité économique et modèle économique et financier solide."
+        path="/dimension-scientifique"
+        jsonLd={breadcrumbJsonLd([
+          { name: "Accueil", path: "/" },
+          { name: "Dimension scientifique", path: "/dimension-scientifique" },
+        ])}
+      />
+      
       <NavBar currentPath={location.pathname} />
 
       {/* ---------- FIL D'ARIANE ---------- */}

@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import OtherDimensions from "../components/otherDimension";
 import { endogeneCards } from "../data/dimensionEndogene";
 import {Whatsapp} from '../components/whatsapp'
+import { Seo, breadcrumbJsonLd } from "../components/seo";
 
 function EndogeneCard({ card }) {
   const Icon = card.icon;
@@ -74,6 +75,17 @@ export default function DimensionEndogene() {
 
   return (
     <div className="bg-white pb-16 dark:bg-slate-900 md:pb-0">
+     
+     <Seo
+        title="Dimension culturelle et endogène"
+        description="Découvrez la dimension culturelle et endogène de l'entreprise selon Mebusco SARL : champ de force, système immunitaire et ancrage culturel des organisations."
+        path="/dimension-culto-endogene"
+        jsonLd={breadcrumbJsonLd([
+          { name: "Accueil", path: "/" },
+          { name: "Dimension culturelle et endogène", path: "/dimension-culto-endogene" },
+        ])}
+      />
+     
       <NavBar currentPath={location.pathname} />
 
       {/* ---------- FIL D'ARIANE ---------- */}

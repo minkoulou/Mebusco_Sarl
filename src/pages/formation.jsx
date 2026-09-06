@@ -5,6 +5,8 @@ import Footer from "../components/footer";
 import OtherDimensions from "../components/otherDimension";
 import { formationStats, formats, methodology } from "../data/formations";
 import {Whatsapp} from '../components/whatsapp'
+import { Seo, breadcrumbJsonLd } from "../components/seo";
+
 
 export default function Formation() {
   const location = useLocation();
@@ -13,6 +15,17 @@ export default function Formation() {
 
   return (
     <div className="relative bg-white pb-16 dark:bg-slate-900 md:pb-0">
+      
+      <Seo
+        title="Formation"
+        description="Mebusco SARL propose des formations en formats packagés ou sur-mesure pour transmettre les connaissances essentielles à la pérennité de votre entreprise."
+        path="/formation"
+        jsonLd={breadcrumbJsonLd([
+          { name: "Accueil", path: "/" },
+          { name: "Formation", path: "/formation" },
+        ])}
+      />
+      
       <NavBar currentPath={location.pathname} />
 
       {/* ---------- FIL D'ARIANE ---------- */}

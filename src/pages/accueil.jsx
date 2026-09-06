@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Button from '../components/boutons'
 import Footer from "../components/footer";
 import { Whatsapp } from "../components/whatsapp";
+import { Seo, organizationJsonLd } from "../components/seo";
+
 // import {}
 
 const dimensionCards = [
@@ -49,6 +51,13 @@ export default function Accueil() {
     const location=useLocation()
   return (
     <div className="bg-white pb-16 dark:bg-slate-900 md:pb-0">
+       
+       <Seo
+        title="Cabinet de conseil en entreprise à Yaoundé"
+        description="Mebusco SARL accompagne la création et la croissance d'entreprises vivantes, prospères et durables à travers une approche scientifique, spirituelle et culto-endogène. Devis gratuit."
+        path="/"
+        jsonLd={organizationJsonLd}
+      />
 
       <NavBar currentPath={location.pathname} />
 

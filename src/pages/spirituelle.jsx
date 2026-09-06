@@ -6,6 +6,8 @@ import OtherDimensions from "../components/otherDimension";
 import { essenceSteps } from "../data/DimSpirit";
 import { Whatsapp } from "../components/whatsapp";
 import Button from '../components/boutons'
+import { Seo, breadcrumbJsonLd } from "../components/seo";
+
 
 function StepCard({ step }) {
   const Icon = step.icon;
@@ -56,6 +58,17 @@ export  function Spirituelle() {
 
   return (
     <div className="bg-white pb-16 dark:bg-slate-900 md:pb-0">
+      
+      <Seo
+        title="Dimension spirituelle"
+        description="La dimension spirituelle de l'entreprise selon Mebusco SARL : être spirituel, étoile de naissance et code génétique de l'organisation, avant sa naissance matérielle."
+        path="/dimension-spirituelle"
+        jsonLd={breadcrumbJsonLd([
+          { name: "Accueil", path: "/" },
+          { name: "Dimension spirituelle", path: "/dimension-spirituelle" },
+        ])}
+      />
+      
       <NavBar currentPath={location.pathname} />
 
       {/* ---------- FIL D'ARIANE ---------- */}
