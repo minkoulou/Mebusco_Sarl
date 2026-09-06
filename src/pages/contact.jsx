@@ -16,7 +16,7 @@ const infoCards = [
   {
     icon: Phone,
     label: "Lignes directes",
-    lines: ["699 939 116", "678 707 572"],
+    lines: ["+237 699 939 116", "+237 678 707 572"],
   },
   {
     icon: Mail,

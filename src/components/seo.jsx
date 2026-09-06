@@ -9,6 +9,7 @@ const DEFAULT_IMAGE = `${SITE_URL}/logo.jpeg`;
  * Centralise title, meta description, canonical, Open Graph, Twitter Card
  * et données structurées JSON-LD (schema.org).
  */
+
 export function Seo({
   title,
   description,

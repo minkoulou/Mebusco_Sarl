@@ -19,11 +19,11 @@ export default function Footer() {
           <li className="flex items-center gap-3">
             <Phone className="h-4.5 w-4.5 text-carmin" strokeWidth={1.6} />
             <a href="tel:+237699939116" className="hover:underline">
-              699 939 116
+              +237 699 939 116
             </a>
             {" / "}
             <a href="tel:+237678707872" className="hover:underline">
-              678 707 872
+             +237 678 707 872
             </a>
           </li>
           <li className="flex items-center gap-3">
