@@ -33,7 +33,7 @@ const dimensionCards = [
     title: "Dimension cultuelle et endogène",
     body: "L'entité spirituelle de l'entreprise, connectée et alimentant son entité matérielle, lui apporte force, pouvoir, puissance, énergie, vie, lumière, bénédictions, prospérité, longévité.",
     quote: "L'une de ses meilleures expressions est le champ de force et le système immunitaire de l'entreprise",
-    href: "/dimension-culturelle-endogene",
+    href: "/dimension-culto-endogene",
   },
   {
     key: "formation",
