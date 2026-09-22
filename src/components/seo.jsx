@@ -61,7 +61,7 @@ export function Seo({
   logo: `${SITE_URL}/logo.jpeg`,
   image: `${SITE_URL}/logo.jpeg`,
   description:
-    "Cabinet de conseil, études et formation basé à Yaoundé, spécialisé dans l'accompagnement scientifique, spirituel et culto-endogène des entreprises.",
+    "Cabinet de conseil, études et formation basé à Yaoundé, spécialisé dans l'accompagnement des entreprises.",
   founder: {
     "@type": "Person",
     name: "Mebenga Etoundi Joseph",
