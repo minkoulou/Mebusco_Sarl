@@ -5,19 +5,7 @@ import { Link } from "react-router-dom";
 import ThemeToggle from "./Themetoggle";
 // import Button from "./boutons";
 
-
-/**
- * Navbar responsive unique.
- * - < md  : header fixe (logo + burger + compte) qui ouvre un tiroir de liens,
- *           PLUS une tab bar fixe en bas d'écran avec les 5 liens principaux.
- * - >= md : header classique avec liens horizontaux + CTA, pas de tab bar.
- *
- * `currentPath` sert uniquement à mettre un lien en surbrillance (état actif).
- * Passe le pathname de ton router (ex: useLocation().pathname avec react-router).
- * 
- * / Emblème de marque : cercle à 4 quadrants (signature visuelle Mebusco).
- * 
- * */ 
+ 
  
 export  function NavBar({ currentPath = "/" }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -25,19 +13,20 @@ export  function NavBar({ currentPath = "/" }) {
   return (
     <>
       {/* ---------- HEADER (mobile + desktop) ---------- */}
+
       <header className="sticky top-0 z-40 bg-navy text-white">
 
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-8">
+        <div className="mx-auto flex h-16 w-full items-center justify-between px-4 md:px-8">
           
           {/* Logo */}
 
           <Link to={"/"} className="flex items-center gap-2.5 md:flex-1">
-            <img src="/logo.jpeg" className="h-8 w-8 rounded-xl" />
+            <img src="/logo.jpeg" className="h-8 w-8 rounded-xl" alt="Mebusco SARL, cabinet de conseil en entreprise à Yaoundé" />
             <span className="text-lg font-bold tracking-wide">MEBUSCO SARL </span>
           </Link>
 
           {/* Liens horizontaux — desktop uniquement */}
-          <nav className="hidden md:flex md:items-center md:text-xs sm:gap-4 sm:px-4 md:justify-around  md:flex-3 ">
+          <nav className="hidden md:flex md:flex-3 md:items-center md:justify-around md:gap-5 md:whitespace-nowrap md:px-4 md:text-xs lg:gap-8">
             {navLinks.map((link) => {
               const isActive = currentPath === link.path;
               return (
@@ -53,6 +42,7 @@ export  function NavBar({ currentPath = "/" }) {
                 </Link>
               );
             })}
+         
           </nav>
 
           {/* CTA — desktop uniquement */}
@@ -122,6 +112,13 @@ export  function NavBar({ currentPath = "/" }) {
                   {link.label}
                 </Link>
               ))}
+              <Link
+                to="/blog"
+                onClick={() => setDrawerOpen(false)}
+                className="border-b border-white/10 hover:font-bold transition-font duration-200 py-3 text-sm font-medium tracking-wide text-white/85"
+              >
+                Blog
+              </Link>
             </nav>
 
             <div className="flex flex-col gap-3 pt-6 mt-12">

@@ -113,18 +113,11 @@ export  function ContactForm() {
             >
               Sujet de consultation
             </label>
-            <select
+            <input
               id="sujet"
               name="sujet"
-              defaultValue={contactServices[0]}
               className="mt-1.5 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-navy dark:border-slate-700 dark:bg-slate-900 dark:text-white"
-            >
-              {contactServices.map((s) => (
-                <option key={s} value={s}>
-                  {s}
-                </option>
-              ))}
-            </select>
+            />
           </div>
           
           {/* choix de la methode de paiement */}

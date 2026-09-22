@@ -32,8 +32,8 @@ export default function Contact() {
     <div className="bg-white pb-16 dark:bg-slate-900 md:pb-0">
       
         <Seo
-        title="Contact"
-        description="Contactez Mebusco SARL à Yaoundé pour un devis de conseil en entreprise : téléphone, WhatsApp, email ou formulaire en ligne. Réponse sous 24h."
+        title="Contact | Cabinet de Conseil Mebusco SARL Yaoundé"
+        description="Contactez Mebusco SARL à Yaoundé pour un devis de conseil en création d'entreprise : téléphone, WhatsApp, email ou formulaire en ligne. Réponse sous 24h."
         path="/contact"
         jsonLd={breadcrumbJsonLd([
           { name: "Accueil", path: "/" },

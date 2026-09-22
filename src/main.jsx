@@ -3,42 +3,43 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 // import {App} from './App.jsx'
-import Accueil from './pages/accueil.jsx'
-import {Scientifique} from './pages/scientifique.jsx'
-import {Spirituelle} from './pages/spirituelle.jsx'
-import CultoEndogene from './pages/culto-endogene.jsx'
+import {Accueil} from './pages/accueil.jsx'
+import Comprehension from './pages/comprehension.jsx'
+import {ApprocheClassique} from './pages/approche-classique.jsx'
 import Formation from './pages/formation.jsx'
 import Contact from './pages/contact.jsx'
+import ApprocheMetaphysique from  './pages/Approchemetaphysique.jsx'
 
-
-
+ 
+ 
+ 
 const routes=createBrowserRouter([
   {
     path:"/",
     element:<Accueil/>
   },
-
+ 
   {
-    path:"/dimension-scientifique",
-    element:<Scientifique/>
+    path:"/notre-comprehension-entreprise",
+    element:<Comprehension/>
   },
-
-   {
-    path:"/dimension-spirituelle",
-    element:<Spirituelle/>
+ 
+  {
+    path:"/approche-classique",
+    element:<ApprocheClassique/>
   },
-
+ 
  {
-    path:"/dimension-culto-endogene",
-    element:<CultoEndogene/>
+    path:"/approche-metaphysique",
+    element:<ApprocheMetaphysique/>
   },
-
+ 
    {
     path:"/formation",
     element:<Formation/>
   },
-
-
+ 
+ 
    {
     path:"/contact",
     element:<Contact/>

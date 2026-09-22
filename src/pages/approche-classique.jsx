@@ -1,11 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import { NavBar } from "../components/navbar";
 import Footer from "../components/footer";
-import OtherDimensions from "../components/otherDimension";
-import { quickTabs, sections } from "../data/dimensions";
+import { quickTabs, sections } from "../data/Approcheclassique";
 import { Whatsapp } from "../components/whatsapp";
 import Button from "../components/boutons";
 import { Seo, breadcrumbJsonLd } from "../components/seo";
+ import {Typewriter} from "../components/writeranime"
+
 
 
 function ListBox({ items }) {
@@ -36,19 +37,19 @@ function FrameworkGrid({ items }) {
   );
 }
 
-export  function Scientifique() {
+export  function ApprocheClassique() {
   const location = useLocation();
 
   return (
     <div className="bg-white pb-16 dark:bg-slate-900 md:pb-0">
       
       <Seo
-        title="Dimension scientifique"
-        description="La dimension scientifique de l'entreprise selon Mebusco SARL : faisabilité technique, rentabilité économique et modèle économique et financier solide."
-        path="/dimension-scientifique"
+       title="Approche Classique de Conseil en Entreprise | Mebusco"
+       description="L'approche d'intervention classique de Mebusco SARL à Yaoundé : étude de faisabilité, rentabilité économique et business plan solide pour votre entreprise."
+        path="/approche-classique"
         jsonLd={breadcrumbJsonLd([
           { name: "Accueil", path: "/" },
-          { name: "Dimension scientifique", path: "/dimension-scientifique" },
+          { name: "Approche d'Intervention Classique", path: "/approche-classique" },
         ])}
       />
       
@@ -61,7 +62,7 @@ export  function Scientifique() {
             Accueil
           </Link>
           <span className="mx-2">/</span>
-          <span className="text-navy dark:text-white">Dimension scientifique</span>
+          <span className="text-navy dark:text-white">Approche d'Intervention Classique</span>
         </div>
       </div>
 
@@ -80,12 +81,12 @@ export  function Scientifique() {
             Expertise
           </span>
           <h1 className="mt-5 max-w-2xl font-serif text-3xl font-bold text-navy dark:text-white md:text-5xl">
-            Ingénierie de Performance
+           <Typewriter text=" Ingénierie de Performance" speed={45} /> 
           </h1>
+
           <p className="mt-4 max-w-xl text-sm text-slate-500 dark:text-slate-400 md:text-base">
-            L'approche rigoureuse de Mebusco transforme les données brutes en
-            leviers stratégiques pour une croissance pérenne et structurée.
-          </p>
+          L'approche classique de conseil en entreprise de Mebusco SARL à Yaoundé transforme les données brutes en leviers stratégiques — étude de faisabilité, business plan et croissance pérenne et structurée.</p>
+          
         </div>
       </section>
 
@@ -177,7 +178,6 @@ export  function Scientifique() {
       />
      </div> 
 
-      <OtherDimensions currentKey="scientifique" />
      <div className="w-full md:w-1/4 mx-auto p-4">  
       <Button  chemin='/contact' nom='demander un devis' bg='bg-white' color='text-black'/>
      </div> 

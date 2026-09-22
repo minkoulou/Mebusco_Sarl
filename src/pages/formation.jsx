@@ -1,9 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import { CircleCheck } from "lucide-react";
+import { CircleCheck, Calendar, Clock, Video, ArrowRight } from "lucide-react";
 import { NavBar } from "../components/navbar";
 import Footer from "../components/footer";
-import OtherDimensions from "../components/otherDimension";
-import { formationStats, formats, methodology } from "../data/formations";
+import { formationStats, formats, methodology, nextSession } from "../data/formations";
 import {Whatsapp} from '../components/whatsapp'
 import { Seo, breadcrumbJsonLd } from "../components/seo";
 
@@ -17,8 +16,8 @@ export default function Formation() {
     <div className="relative bg-white pb-16 dark:bg-slate-900 md:pb-0">
       
       <Seo
-        title="Formation"
-        description="Mebusco SARL propose des formations en formats packagés ou sur-mesure pour transmettre les connaissances essentielles à la pérennité de votre entreprise."
+        title="Formation en Entreprise à Yaoundé | Mebusco SARL"
+        description="Mebusco SARL propose des formations en création et gestion d'entreprise à Yaoundé, Cameroun, en formats packagés ou sur-mesure pour votre équipe."
         path="/formation"
         jsonLd={breadcrumbJsonLd([
           { name: "Accueil", path: "/" },
@@ -27,6 +26,8 @@ export default function Formation() {
       />
       
       <NavBar currentPath={location.pathname} />
+
+      <main>
 
       {/* ---------- FIL D'ARIANE ---------- */}
       <div className="border-b border-slate-100 bg-white px-4 py-3 dark:border-slate-800 dark:bg-slate-900 md:px-8">
@@ -50,8 +51,8 @@ export default function Formation() {
             L'Excellence par la Transmission
           </h1>
           <p className="mt-4 max-w-xl text-sm text-white/70 md:text-base">
-            Développez les compétences critiques de demain avec nos
-            programmes de formation stratégique et opérationnelle.
+             Développez les compétences critiques de demain avec les
+             programmes de formation stratégique et opérationnelle en entreprise de Mebusco SARL 
           </p>
         </div>
       </section>
@@ -59,12 +60,6 @@ export default function Formation() {
       {/* ---------- CITATIONS ---------- */}
       <div className="bg-parchemin px-4 py-10 text-center dark:bg-slate-800 md:px-8">
         <div className="mx-auto max-w-2xl space-y-8">
-          <div>
-            <p className="font-serif text-lg italic text-navy dark:text-white md:text-xl">
-              « Mon peuple périt faute de connaissances »
-            </p>
-            <span className="mx-auto mt-3 block h-0.5 w-10 bg-carmin" />
-          </div>
           <div>
             <p className="font-serif text-lg italic text-navy dark:text-white md:text-xl">
               « Cherchez la connaissance du berceau à la tombe »
@@ -147,6 +142,68 @@ export default function Formation() {
             </Link>
           </div>
         </div>
+
+        {/* ---------- PROCHAINE SESSION ---------- */}
+        
+          <div className="mx-auto mt-10 max-w-3xl animate-pulse">
+
+            <div className="group relative overflow-hidden rounded-2xl border-2 border-carmin bg-navy p-6 shadow-[0_0_25px_-5px_rgba(200,17,46,0.5)] transition-shadow duration-500 hover:shadow-[0_0_35px_-5px_rgba(200,17,46,0.7)] dark:bg-slate-950 md:p-8">
+
+              <span
+                className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-carmin/25 blur-2xl animate-pulse"
+                aria-hidden="true"
+              />
+
+              <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <span className="inline-flex items-center gap-2 rounded-full bg-carmin/15 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-carmin">
+                    <span className="relative flex h-2 w-2">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-carmin opacity-75" />
+                      <span className="relative inline-flex h-2 w-2 rounded-full bg-carmin" />
+                    </span>
+                    Prochaine session
+                  </span>
+
+                  <h3 className="mt-3 text-xl font-bold text-white md:text-2xl">
+                    {nextSession.title}
+                  </h3>
+
+                  <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/80">
+                    <span className="flex items-center gap-2">
+                      <Calendar className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
+                      {nextSession.date}
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <Clock className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
+                      {nextSession.heure}
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <Video className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
+                      {nextSession.mode}
+                    </span>
+                  </div>
+                </div>
+
+                {nextSession.zoomLink && (
+                  <a
+                    href={nextSession.zoomLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group/btn flex shrink-0 items-center justify-center gap-2 rounded-xl bg-carmin px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:brightness-110"
+                  >
+                    Rejoindre sur Zoom
+                    <ArrowRight
+                      className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1"
+                      strokeWidth={2}
+                    />
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+          <p className="text-center text-white font-bold text-xl pt-10">
+            Nous consulter pour les dates et prix
+          </p>
       </div>
 
       {/* ---------- MÉTHODOLOGIE ---------- */}
@@ -198,16 +255,8 @@ export default function Formation() {
         </div>
       </div>
 
-      <OtherDimensions
-        currentKey="formation"
-        heading="Découvrir nos autres pôles"
-        uppercase
-        labels={{
-          scientifique: "Pôle Scientifique",
-          Spirituelle: "Pôle Spirituel",
-          endogène: "Pôle Culto-Endogène",
-        }}
-      />
+      </main>
+
       <Whatsapp/>
       <Footer />
     </div>

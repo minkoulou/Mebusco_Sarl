@@ -1,43 +1,42 @@
-import {Home,FlaskConical,Church,Share2,GraduationCap} from "lucide-react"
+import {Home,Lightbulb,FlaskConical,Share2,GraduationCap} from "lucide-react"
 
 export const navLinks = [
     {
         Key:"accueil",
         label:"Accueil",
-        shortlabel:"Accueil",
+        shortLabel:"Accueil",
         path:"/",
         icon:Home
     },
 
+    {
+        Key:"comprehension",
+        label:"Notre Compréhension de l'Entreprise",
+        shortLabel:"Notre Vision",
+        path:"/notre-comprehension-entreprise",
+        icon:Lightbulb
+    },
 
     {
-      Key:"scientifique",
-      label:"Dimension scientifique",
-      shortlabel:"Dimension Scientifique",
-      path:"/dimension-scientifique",
+      Key:"intervention-classique",
+      label:"Approche intervention classique",
+      shortLabel:" intervention classique",
+      path:"/approche-classique",
       icon:FlaskConical 
     },
     
     {
-        Key:"Spirituelle",
-        label:"Dimension spirituelle",
-        shortlabel:"Spirituelle",
-        path:"/dimension-spirituelle",
-        icon:Church
-    },
-    
-    {
-        Key:"endogène",
-        label:"Dimension-culto-endogène",
-        shortlabel:"culto-endogène",
-        path:"/dimension-culto-endogene",
+        Key:"approche-metaphysique",
+        label:"Approche selon le modèle J.E. Mebenga de l'entreprise métaphysique",
+        shortLabel:"Modèle J.E. Mebenga",
+        path:"/approche-metaphysique",
         icon:Share2
     },
 
      {
         Key:"formation",
         label:"Formation",
-        shortlabel:"Formation",
+        shortLabel:"Nos Formation",
         path:"/formation",
         icon:GraduationCap
     },

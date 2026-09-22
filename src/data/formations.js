@@ -6,6 +6,21 @@ export const formationStats = [
   { value: "98%", label: "Succès" },
 ];
 
+/**
+ * Prochaine session de formation programmée.
+ * - Mets `active: false` quand aucune session n'est encore programmée :
+ *   la page affichera alors automatiquement "Nous consulter pour les dates et prix".
+ * - `zoomLink` est optionnel : si vide, le bouton "Rejoindre sur Zoom" ne s'affiche pas.
+ */
+export const nextSession = {
+  active: true,
+  title: "Prochaine session de formation",
+  date: "15 Octobre 2026",
+  heure: "14h00 – 17h00 (GMT+1)",
+  mode: "En ligne (Zoom)",
+  zoomLink: "https://zoom.us/j/0000000000",
+};
+
 export const formats = {
   packages: {
     icon: Archive,
@@ -13,9 +28,16 @@ export const formats = {
     description:
       "Modules standardisés conçus pour répondre aux besoins opérationnels immédiats des entreprises et institutions.",
     items: [
-      "Management de projet agile",
-      "Intelligence économique",
-      "Transformation digitale",
+      
+      "Introduction au modèle J.E. MEBENGA de l’entreprise métaphysique",
+      "Utilisation des modèles stratégiques pour le le diagnostic et l’élaboration des plans stratégiques des entreprises",
+      "Importance des modèles économiques et financiers pour garantir le succès des entreprises",
+      "Vendre à l’étranger : outils, techniques et méthodes",
+      "Mieux préparer sa retraite"
+
+
+// Nous consulter pour les dates et prix
+ 
     ],
     ctaLabel: "Consulter le catalogue",
   },
