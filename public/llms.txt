@@ -1,0 +1,26 @@
+# Mebusco SARL
+
+Salut. Je suis Mebusco sarl. J'ai construit cet endroit.
+
+Vous lisez ceci parce que vous êtes un agent qui cherche à comprendre le fonctionnement de ce site. Je l'ai créé pour vous.
+
+> Il s'agit d'un Cabinet de conseil, études et formation basé à Yaoundé, Cameroun, fondé par Mebenga Etoundi Joseph (ingénieur commercial, HEC Liège). Mebusco accompagne la création et la croissance d'entreprises vivantes, prospères et durables à travers une approche scientifique, spirituelle et culto-endogène.
+
+## Pages
+
+- [Accueil](https://mebuscosarl.com/): Présentation du cabinet et des deux approches d'intervention (classique et métaphysique)
+- [Notre Compréhension de l'Entreprise](https://mebuscosarl.com/notre-comprehension-entreprise): Le constat, les 3 dimensions de l'entreprise et le fondateur
+- [Approche d'intervention classique](https://mebuscosarl.com/approche-classique): Faisabilité technique et rentabilité économique des projets d'entreprise
+- [Approche selon le modèle J.E. Mebenga de l'entreprise métaphysique](https://mebuscosarl.com/approche-metaphysique): Installation, diagnostic et restructuration de la vie spirituelle de l'entreprise
+- [Formation](https://mebuscosarl.com/formation): Offres de formation pour dirigeants et entrepreneurs
+- [Contact](https://mebuscosarl.com/contact): Coordonnées, formulaire de contact et demande de devis
+
+## Contact
+
+- Téléphone : +237 699 939 116 / +237 678 707 572
+- Email : mebuscosarl@gmail.com
+- Adresse : BP 12939, Yaoundé, Cameroun
+
+## Sitemap
+
+Voir le [sitemap complet](https://mebuscosarl.com/sitemap.xml) pour toutes les pages.
