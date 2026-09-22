@@ -161,11 +161,11 @@ export  function Accueil() {
           </p>
          
           <h2 className="dark:text-white mt-2 text-2xl font-bold text-navy md:text-3xl">
-            Explorez nos Dimensions
+            Explorez nos Approches
           </h2>
          
           <p className="mx-auto mt-3 dark:text-slate-400 max-w-xl text-sm text-slate-500 md:text-base">
-            Cliquez sur chacune des dimensions pour découvrir nos services
+            Cliquez sur chacune Approche pour découvrir nos services
             spécifiques
           </p>
         
