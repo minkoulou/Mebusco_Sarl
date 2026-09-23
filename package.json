@@ -29,5 +29,25 @@
     "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^17.7.0",
     "vite": "^8.1.1"
+  },
+
+  "reactSnap": {
+    "source": "dist",
+    "minifyHtml": {
+      "collapseWhitespace": false
+    },
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "include": [
+      "/",
+      "/notre-comprehension-entreprise",
+      "/approche-classique",
+      "/approche-metaphysique",
+      "/formation",
+      "/contact"
+    ]
   }
 }
+

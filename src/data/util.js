@@ -36,7 +36,7 @@ export const navLinks = [
      {
         Key:"formation",
         label:"Formation",
-        shortLabel:"Nos Formation",
+        shortLabel:"Nos Formations",
         path:"/formation",
         icon:GraduationCap
     },
