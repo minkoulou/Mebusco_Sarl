@@ -115,34 +115,7 @@ export  function ContactForm() {
               placeholder="+237 ..."
               className="mt-1.5 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-navy placeholder:text-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder:text-slate-500"
             />
-          </div>
-
-          {/* Prestation souhaitée (remplace l'ancien champ "mode de paiement") */}
-          <div>
-            <label
-              htmlFor="prestation"
-              className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400"
-            >
-              Prestation souhaitée
-            </label>
-            <select
-              id="prestation"
-              name="prestation"
-              required
-              value={prestation}
-              onChange={(e) => setPrestation(e.target.value)}
-              className="mt-1.5 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-navy dark:border-slate-700 dark:bg-slate-900 dark:text-white"
-            >
-              <option value="" disabled>
-                Choisir une prestation
-              </option>
-              {prestationOptions.map((p) => (
-                <option key={p.id} value={p.id}>
-                  {p.label}
-                </option>
-              ))}
-            </select>
-          </div>
+          </div>        
 
           {/* Sujet de consultation */}
           <div>

@@ -4,7 +4,7 @@ import { createRoot, hydrateRoot } from 'react-dom/client'
 import { HelmetProvider } from 'react-helmet-async'
 import './index.css'
 // import {App} from './App.jsx'
-import {Accueil} from './pages/accueil.jsx'
+import Accueil from './pages/accueil.jsx'
 import Comprehension from './pages/comprehension.jsx'
 import {ApprocheClassique} from './pages/approche-classique.jsx'
 // import CultoEndogene from './pages/culto-endogene.jsx'
@@ -14,6 +14,7 @@ import ApprocheMetaphysique from  './pages/Approchemetaphysique.jsx'
 import EtudesBusinessPlans from './pages/etudes-business-plans.jsx'
 import SeminaireEntreprisesFamiliales from './pages/seminaire-entreprises-familiales.jsx'
 import APropos from './pages/a-propos.jsx'
+import References from './pages/references.jsx'
 
  
  
@@ -52,6 +53,11 @@ const routes=createBrowserRouter([
   {
     path:"/a-propos",
     element:<APropos/>
+  },
+ 
+  {
+    path:"/references",
+    element:<References/>
   },
  
    {

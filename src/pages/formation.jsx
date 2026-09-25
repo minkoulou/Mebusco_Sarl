@@ -58,6 +58,70 @@ export default function Formation() {
         </div>
       </section>
 
+
+      {/* ---------- SÉMINAIRE : PROCHAINE SESSION OUVERTE ----------*/}
+          
+      {nextSession.active && (
+        <div className="px-4 pt-10 md:px-8">
+          <div className=" animate-pulse group relative mx-auto max-w-3xl overflow-hidden rounded-2xl border-2 border-carmin bg-navy p-6 shadow-[0_0_25px_-5px_rgba(200,17,46,0.5)] transition-shadow duration-500 hover:shadow-[0_0_35px_-5px_rgba(200,17,46,0.7)] dark:bg-slate-950 md:p-8">
+
+            <span
+              className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-carmin/25 blur-2xl"
+              aria-hidden="true"
+            />
+
+            <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+              <div>
+                <span className="inline-flex items-center gap-2 rounded-full bg-carmin/15 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-carmin">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-carmin opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-carmin" />
+                  </span>
+                  Session ouverte aux préinscriptions
+                </span>
+
+                <h3 className="mt-3 text-xl font-bold text-white md:text-2xl">
+                  {nextSession.title}
+                </h3>
+
+                <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/80">
+                  <span className="flex items-center gap-2">
+                    <Calendar className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
+                    {nextSession.date}
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <Clock className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
+                    {nextSession.duree}
+                  </span>
+                  <span className="flex items-center gap-2">
+                    <MapPin className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
+                    {nextSession.lieu}
+                  </span>
+                </div>
+
+                <p className="mt-3 text-sm font-bold text-white">
+                  {nextSession.price} par participant
+                </p>
+              </div>
+
+              <Link
+                to={seminar.path}
+                className="group/btn flex shrink-0 items-center justify-center gap-2 rounded-xl bg-carmin px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:brightness-110"
+              >
+                Voir le programme
+                <ArrowRight
+                  className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1"
+                  strokeWidth={2}
+                />
+              </Link>
+            </div>
+          </div>
+          <p className="mt-3 text-center text-xs text-white/60 md:text-sm">
+            Lieu à confirmer. Une demande via le site est une préinscription, sans paiement ni place garantie.
+          </p>
+        </div>
+      )}
+
       {/* ---------- CITATIONS ---------- */}
       <div className="bg-parchemin px-4 py-10 text-center dark:bg-slate-800 md:px-8">
         <div className="mx-auto max-w-2xl space-y-8">
@@ -73,7 +137,7 @@ export default function Formation() {
       {/* ---------- NOS FORMATS ---------- */}
       <div className="mx-auto max-w-6xl px-4 py-10 md:px-8">
         <h2 className="text-xl font-bold text-navy dark:text-white md:text-2xl">
-          Nos Formats
+          Nos Formations
         </h2>
         <span className="mt-2 block h-1 w-14 bg-carmin" />
 
@@ -131,69 +195,6 @@ export default function Formation() {
             </Link>
           </div>
         </div>
-
-        {/* ---------- SÉMINAIRE : PROCHAINE SESSION OUVERTE ---------- */}
-        {nextSession.active && (
-          <div className="mx-auto mt-10 max-w-3xl animate-pulse">
-
-            <div className="group relative overflow-hidden rounded-2xl border-2 border-carmin bg-navy p-6 shadow-[0_0_25px_-5px_rgba(200,17,46,0.5)] transition-shadow duration-500 hover:shadow-[0_0_35px_-5px_rgba(200,17,46,0.7)] dark:bg-slate-950 md:p-8">
-
-              <span
-                className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-carmin/25 blur-2xl"
-                aria-hidden="true"
-              />
-
-              <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-                <div>
-                  <span className="inline-flex items-center gap-2 rounded-full bg-carmin/15 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-carmin">
-                    <span className="relative flex h-2 w-2">
-                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-carmin opacity-75" />
-                      <span className="relative inline-flex h-2 w-2 rounded-full bg-carmin" />
-                    </span>
-                    Session ouverte aux préinscriptions
-                  </span>
-
-                  <h3 className="mt-3 text-xl font-bold text-white md:text-2xl">
-                    {nextSession.title}
-                  </h3>
-
-                  <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/80">
-                    <span className="flex items-center gap-2">
-                      <Calendar className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
-                      {nextSession.date}
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <Clock className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
-                      {nextSession.duree}
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <MapPin className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
-                      {nextSession.lieu}
-                    </span>
-                  </div>
-
-                  <p className="mt-3 text-sm font-bold text-white">
-                    {nextSession.price} par participant
-                  </p>
-                </div>
-
-                <Link
-                  to={seminar.path}
-                  className="group/btn flex shrink-0 items-center justify-center gap-2 rounded-xl bg-carmin px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:brightness-110"
-                >
-                  Voir le programme
-                  <ArrowRight
-                    className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1"
-                    strokeWidth={2}
-                  />
-                </Link>
-              </div>
-            </div>
-            <p className="mt-3 text-center text-xs text-white/60 md:text-sm">
-              Lieu à confirmer. Une demande via le site est une préinscription, sans paiement ni place garantie.
-            </p>
-          </div>
-        )}
       </div>
 
       {/* ---------- MÉTHODOLOGIE ---------- */}
