@@ -12,8 +12,6 @@ import { Seo, organizationJsonLd } from "../components/seo";
 
 // import {}
 
-// Icônes récupérées par Key plutôt que par index : évite qu'un futur
-// réordonnancement de navLinks ne désynchronise silencieusement les icônes.
 const iconFor = (key) => navLinks.find((link) => link.Key === key)?.icon;
 
  const dimensionCards = [
@@ -91,7 +89,7 @@ export  function Accueil() {
         <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center">
 
             <span className="inline-block bg-carmin px-3 py-1.5 text-xs font-bold uppercase tracking-wider">
-              Conseil et formation en creation d'entreprises
+              Conseil et formation en entreprises
             </span>
 
             <h1 className="mt-6 text-5xl font-extrabold uppercase leading-[1.05] tracking-tight md:text-6xl">

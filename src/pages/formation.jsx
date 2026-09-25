@@ -1,8 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
-import { CircleCheck, Calendar, Clock, Video, ArrowRight } from "lucide-react";
+import { CircleCheck, Calendar, Clock, MapPin, ArrowRight } from "lucide-react";
 import { NavBar } from "../components/navbar";
 import Footer from "../components/footer";
-import { formationStats, formats, methodology, nextSession } from "../data/formations";
+import { formats, methodology, nextSession } from "../data/formations";
+import { seminar } from "../data/site";
 import {Whatsapp} from '../components/whatsapp'
 import { Seo, breadcrumbJsonLd } from "../components/seo";
 
@@ -69,18 +70,6 @@ export default function Formation() {
         </div>
       </div>
 
-      {/* ---------- STATS ---------- */}
-      <div className="grid grid-cols-3 divide-x divide-slate-200 bg-parchemin py-6 text-center dark:divide-slate-700 dark:bg-slate-800">
-        {formationStats.map((stat) => (
-          <div key={stat.label}>
-            <p className="text-xl font-bold text-carmin md:text-2xl">{stat.value}</p>
-            <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-              {stat.label}
-            </p>
-          </div>
-        ))}
-      </div>
-
       {/* ---------- NOS FORMATS ---------- */}
       <div className="mx-auto max-w-6xl px-4 py-10 md:px-8">
         <h2 className="text-xl font-bold text-navy dark:text-white md:text-2xl">
@@ -143,14 +132,14 @@ export default function Formation() {
           </div>
         </div>
 
-        {/* ---------- PROCHAINE SESSION ---------- */}
-        
+        {/* ---------- SÉMINAIRE : PROCHAINE SESSION OUVERTE ---------- */}
+        {nextSession.active && (
           <div className="mx-auto mt-10 max-w-3xl animate-pulse">
 
             <div className="group relative overflow-hidden rounded-2xl border-2 border-carmin bg-navy p-6 shadow-[0_0_25px_-5px_rgba(200,17,46,0.5)] transition-shadow duration-500 hover:shadow-[0_0_35px_-5px_rgba(200,17,46,0.7)] dark:bg-slate-950 md:p-8">
 
               <span
-                className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-carmin/25 blur-2xl animate-pulse"
+                className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-carmin/25 blur-2xl"
                 aria-hidden="true"
               />
 
@@ -161,7 +150,7 @@ export default function Formation() {
                       <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-carmin opacity-75" />
                       <span className="relative inline-flex h-2 w-2 rounded-full bg-carmin" />
                     </span>
-                    Prochaine session
+                    Session ouverte aux préinscriptions
                   </span>
 
                   <h3 className="mt-3 text-xl font-bold text-white md:text-2xl">
@@ -175,35 +164,36 @@ export default function Formation() {
                     </span>
                     <span className="flex items-center gap-2">
                       <Clock className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
-                      {nextSession.heure}
+                      {nextSession.duree}
                     </span>
                     <span className="flex items-center gap-2">
-                      <Video className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
-                      {nextSession.mode}
+                      <MapPin className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
+                      {nextSession.lieu}
                     </span>
                   </div>
+
+                  <p className="mt-3 text-sm font-bold text-white">
+                    {nextSession.price} par participant
+                  </p>
                 </div>
 
-                {nextSession.zoomLink && (
-                  <a
-                    href={nextSession.zoomLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group/btn flex shrink-0 items-center justify-center gap-2 rounded-xl bg-carmin px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:brightness-110"
-                  >
-                    Rejoindre sur Zoom
-                    <ArrowRight
-                      className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1"
-                      strokeWidth={2}
-                    />
-                  </a>
-                )}
+                <Link
+                  to={seminar.path}
+                  className="group/btn flex shrink-0 items-center justify-center gap-2 rounded-xl bg-carmin px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:brightness-110"
+                >
+                  Voir le programme
+                  <ArrowRight
+                    className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1"
+                    strokeWidth={2}
+                  />
+                </Link>
               </div>
             </div>
+            <p className="mt-3 text-center text-xs text-white/60 md:text-sm">
+              Lieu à confirmer. Une demande via le site est une préinscription, sans paiement ni place garantie.
+            </p>
           </div>
-          <p className="text-center text-white font-bold text-xl pt-10">
-            Nous consulter pour les dates et prix
-          </p>
+        )}
       </div>
 
       {/* ---------- MÉTHODOLOGIE ---------- */}

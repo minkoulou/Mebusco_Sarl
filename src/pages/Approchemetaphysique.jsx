@@ -5,7 +5,6 @@ import { phases } from "../data/approcheMetaphysique";
 import { Whatsapp } from "../components/whatsapp";
 import Button from "../components/boutons";
 import { Seo, breadcrumbJsonLd } from "../components/seo";
-import {Typewriter} from '../components/writeranime'
 
 export default function ApprocheMetaphysique() {
   const location = useLocation();
@@ -48,8 +47,7 @@ export default function ApprocheMetaphysique() {
         <div className="mx-auto max-w-6xl">
           <span className="block h-1 w-10 bg-carmin" />
           <h1 className="mt-4 max-w-2xl font-serif text-2xl font-bold md:text-4xl">
-              <Typewriter text="Approche selon le modèle J.E. Mebenga de l'entreprise métaphysique" speed={45} /> 
-            
+             Approche selon le modèle J.E. Mebenga de l'entreprise métaphysique
           </h1>
           <p className="mt-4 max-w-xl text-sm text-white/70 md:text-base">
             Nos services comprennent :

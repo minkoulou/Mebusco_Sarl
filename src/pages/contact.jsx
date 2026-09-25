@@ -11,12 +11,12 @@ const infoCards = [
   {
     icon: MapPin,
     label: "Siège social",
-    lines: ["BP 12939 Yaoundé", "Cameroun"],
+    lines: ["BP 12039 Yaoundé", "Cameroun"],
   },
   {
     icon: Phone,
     label: "Lignes directes",
-    lines: ["+237 699 939 116", "+237 678 707 572"],
+    lines: ["+237 699 939 116", "+237 678 707 872"],
   },
   {
     icon: Mail,

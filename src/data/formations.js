@@ -1,24 +1,18 @@
 import { Archive, Compass, BookOpen, LineChart, Handshake } from "lucide-react";
 
-export const formationStats = [
-  { value: "15+", label: "Experts" },
-  { value: "500+", label: "Certifiés" },
-  { value: "98%", label: "Succès" },
-];
-
 /**
- * Prochaine session de formation programmée.
- * - Mets `active: false` quand aucune session n'est encore programmée :
- *   la page affichera alors automatiquement "Nous consulter pour les dates et prix".
- * - `zoomLink` est optionnel : si vide, le bouton "Rejoindre sur Zoom" ne s'affiche pas.
+ * Prochaine session ouverte aux préinscriptions.
+ * Remplace l'ancien encart "15 Octobre 2026 / Zoom" (démonstration, sans
+ * lien réel) par le vrai séminaire résidentiel, dont les dates et le tarif
+ * sont confirmés (voir src/data/site.js). Le lieu reste à confirmer.
  */
 export const nextSession = {
   active: true,
-  title: "Prochaine session de formation",
-  date: "15 Octobre 2026",
-  heure: "14h00 – 17h00 (GMT+1)",
-  mode: "En ligne (Zoom)",
-  zoomLink: "https://zoom.us/j/0000000000",
+  title: "Séminaire : Entreprises familiales",
+  date: "24 au 26 novembre 2026",
+  duree: "3 jours, 2 nuitées",
+  lieu: "Région de Yaoundé — hôtel à confirmer",
+  price: "350 000 FCFA TTC",
 };
 
 export const formats = {
@@ -28,16 +22,11 @@ export const formats = {
     description:
       "Modules standardisés conçus pour répondre aux besoins opérationnels immédiats des entreprises et institutions.",
     items: [
-      
-      "Introduction au modèle J.E. MEBENGA de l’entreprise métaphysique",
-      "Utilisation des modèles stratégiques pour le le diagnostic et l’élaboration des plans stratégiques des entreprises",
+      "Introduction au modèle J.E. Mebenga de l'entreprise métaphysique",
+      "Utilisation des modèles stratégiques pour le diagnostic et l'élaboration des plans stratégiques des entreprises",
       "Importance des modèles économiques et financiers pour garantir le succès des entreprises",
-      "Vendre à l’étranger : outils, techniques et méthodes",
-      "Mieux préparer sa retraite"
-
-
-// Nous consulter pour les dates et prix
- 
+      "Vendre à l'étranger : outils, techniques et méthodes",
+      "Mieux préparer sa retraite",
     ],
     ctaLabel: "Consulter le catalogue",
   },

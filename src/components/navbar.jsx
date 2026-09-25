@@ -112,13 +112,7 @@ export  function NavBar({ currentPath = "/" }) {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                to="/blog"
-                onClick={() => setDrawerOpen(false)}
-                className="border-b border-white/10 hover:font-bold transition-font duration-200 py-3 text-sm font-medium tracking-wide text-white/85"
-              >
-                Blog
-              </Link>
+            
             </nav>
 
             <div className="flex flex-col gap-3 pt-6 mt-12">

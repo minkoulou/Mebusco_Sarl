@@ -36,7 +36,7 @@ export const troisDimensions = [
   {
     key: "scientifique",
     icon: FlaskConical,
-    title: "Approche d'Intervention Classique",
+    title: "Dimension Scientifique",
     text: "dont l'une des meilleures expressions est le modèle économique et financier.",
     href: "/approche-classique",
   },

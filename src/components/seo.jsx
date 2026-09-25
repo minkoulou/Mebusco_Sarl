@@ -70,7 +70,7 @@ export function Seo({
   },
   address: {
     "@type": "PostalAddress",
-    streetAddress: "BP 12939",
+    streetAddress: "BP 12039",
     addressLocality: "Yaoundé",
     addressCountry: "CM",
   },
@@ -84,7 +84,7 @@ export function Seo({
     },
     {
       "@type": "ContactPoint",
-      telephone: "+237678707572",
+      telephone: "+237678707872",
       contactType: "customer service",
       areaServed: "CM",
       availableLanguage: "French",
@@ -107,4 +107,3 @@ export function breadcrumbJsonLd(items) {
     })),
   };
 }
-

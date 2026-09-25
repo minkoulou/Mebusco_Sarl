@@ -5,7 +5,6 @@ import { quickTabs, sections } from "../data/Approcheclassique";
 import { Whatsapp } from "../components/whatsapp";
 import Button from "../components/boutons";
 import { Seo, breadcrumbJsonLd } from "../components/seo";
- import {Typewriter} from "../components/writeranime"
 
 
 
@@ -81,7 +80,7 @@ export  function ApprocheClassique() {
             Expertise
           </span>
           <h1 className="mt-5 max-w-2xl font-serif text-3xl font-bold text-navy dark:text-white md:text-5xl">
-           <Typewriter text=" Ingénierie de Performance" speed={45} /> 
+                    Ingénierie de Performance
           </h1>
 
           <p className="mt-4 max-w-xl text-sm text-slate-500 dark:text-slate-400 md:text-base">
