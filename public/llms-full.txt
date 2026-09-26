@@ -1,31 +1,52 @@
 # Mebusco SARL
 
-> Cabinet de conseil, études et formation basé à Yaoundé, Cameroun, fondé par Mebenga Etoundi Joseph (ingénieur commercial, HEC Liège). Mebusco accompagne la création et la croissance d'entreprises vivantes, prospères et durables à travers une approche scientifique, spirituelle et culto-endogène.
+> Cabinet de conseil, études et formation basé à Yaoundé, Cameroun, fondé par Joseph Mebenga Etoundi (ingénieur commercial, HEC Liège). Mebusco accompagne les entrepreneurs, dirigeants et institutions dans leurs études de faisabilité, business plans, modèles financiers et formations.
 
 ## À propos
 
-Mebusco SARL est un cabinet de conseil, études et formation basé à Yaoundé. Son positionnement repose sur un modèle d'entreprise scientifique, spirituel et culto-endogène, structuré en deux approches d'intervention au choix du client :
+Mebusco SARL est un cabinet de conseil, d'études et de formation basé à Yaoundé, fondé par Joseph Mebenga Etoundi, ingénieur commercial diplômé de HEC Liège (1985), ancien enseignant associé à l'Université Catholique d'Afrique Centrale (2010-2020).
 
-- **Approche d'intervention classique** : vérifier la faisabilité technique et la rentabilité économique d'un projet (modèle économique et financier).
-- **Approche selon le modèle J.E. Mebenga de l'entreprise métaphysique** : installation, diagnostic et restructuration de la vie spirituelle de l'entreprise — son être spirituel, son champ de force et son système immunitaire.
+Le cabinet propose trois offres principales :
 
-Ces deux approches s'appuient sur une compréhension de l'entreprise comme organisme vivant à 3 dimensions (scientifique, spirituelle, culturelle et endogène), détaillée sur la page "Notre Compréhension de l'Entreprise".
+- **Étude de faisabilité** : évaluer le marché, les moyens nécessaires et les conditions de rentabilité d'un projet.
+- **Business plan et modèle financier** : structurer un projet en un dossier argumenté et des prévisions cohérentes.
+- **Accompagnement au démarrage** : organiser les premières étapes de mise en œuvre.
+
+Le cabinet propose également des formations pour dirigeants et entrepreneurs, ainsi qu'un séminaire résidentiel dédié aux entreprises familiales (gouvernance et transmission).
+
+Deux approches d'intervention sont proposées au choix du client sur des missions données : une approche classique (analyse du projet et de ses données) et une approche selon le modèle J.E. Mebenga de l'entreprise métaphysique (réflexion culturelle, symbolique et spirituelle), cette dernière étant présentée comme un cadre personnel de réflexion et non comme un mécanisme scientifiquement établi.
 
 ## Pages
 
-- [Accueil](https://mebuscosarl.com/): Présentation du cabinet et des deux approches d'intervention
-- [Notre Compréhension de l'Entreprise](https://mebuscosarl.com/notre-comprehension-entreprise): Le constat, les 3 dimensions de l'entreprise et le fondateur
-- [Approche d'intervention classique](https://mebuscosarl.com/approche-classique): Faisabilité technique et rentabilité économique des projets d'entreprise
+- [Accueil](https://mebuscosarl.com/): Présentation du cabinet et des offres (études, business plans, formations, séminaire)
+
+- [Études et business plans](https://mebuscosarl.com/etudes-business-plans): Étude de faisabilité, business plan et modèle financier, accompagnement au démarrage
+
+- [Formation](https://mebuscosarl.com/formation): Formats packagés et sur-mesure pour dirigeants et entrepreneurs
+
+- [Séminaire Entreprises familiales](https://mebuscosarl.com/seminaire-entreprises-familiales): Séminaire résidentiel sur la gouvernance et la transmission des entreprises familiales
+
+- [Références](https://mebuscosarl.com/references): Exemples anonymisés de missions réalisées
+
+- [À propos](https://mebuscosarl.com/a-propos): Parcours du fondateur, Joseph Mebenga Etoundi
+
+- [Notre Compréhension de l'Entreprise](https://mebuscosarl.com/notre-comprehension-entreprise): Vision de l'entreprise en 3 dimensions
+
+- [Approche d'intervention classique](https://mebuscosarl.com/approche-classique): Faisabilité technique et rentabilité économique des projets
+
 - [Approche selon le modèle J.E. Mebenga de l'entreprise métaphysique](https://mebuscosarl.com/approche-metaphysique): Installation, diagnostic et restructuration de la vie spirituelle de l'entreprise
-- [Formation](https://mebuscosarl.com/formation): Offres de formation pour dirigeants et entrepreneurs
+
 - [Contact](https://mebuscosarl.com/contact): Coordonnées, formulaire et demande de devis
+
+- [Informations pratiques](https://mebuscosarl.com/informations): Modalités de commande et conditions du séminaire
+
+- [Confidentialité](https://mebuscosarl.com/confidentialite): Politique de confidentialité
 
 ## Contact
 
-- Téléphone : +237 699 939 116 / +237 678 707 572
+- Téléphone : +237 699 939 116
 - Email : mebuscosarl@gmail.com
 - Adresse : BP 12939, Yaoundé, Cameroun
-- Réponse sous 24h via le formulaire de contact ou WhatsApp
 
 ## Sitemap
 
