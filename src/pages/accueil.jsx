@@ -84,7 +84,7 @@ export default function Accueil() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-semibold uppercase tracking-wide text-white/60">
-              <span>À Yaoundé et à distance</span>
+              <span>À Yaoundé  en présentiel et à distance</span>
               <span className="h-1 w-1 rounded-full bg-white/30" />
               <span>Un accompagnement sur mesure</span>
             </div>
@@ -199,78 +199,6 @@ export default function Accueil() {
         </div>
       </section>
 
-      {/* ---------- FONDATEUR ---------- */}
-{/* 
-      <section className="px-4 py-14 md:px-8 md:py-20">
-        
-        <div className="mx-auto max-w-6xl md:grid md:grid-cols-12 md:items-center md:gap-12">
-        
-          <div className="relative md:col-span-5 hover:scale-105 transition-all duration-200">
-        
-            <img
-              src="/mebenga.jpeg"
-              alt="Mebenga Etoundi Joseph, fondateur et expert consultant chez Mebusco"
-              className="h-105 w-full object-cover md:h-140 rounded-xs shadow-2xl shadow-navy"
-            />
-            
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy/90 to-transparent p-5">
-            
-              <p className="text-base font-bold text-white">
-                Mebenga Etoundi Joseph
-              </p>
-            
-              <p className="text-xs font-semibold uppercase tracking-wide text-white/80">
-                Fondateur &amp; expert consultant
-              </p>
-
-            </div>
-          </div>
-
-          <div className="mt-10 md:col-span-7 md:mt-0">
-           
-            <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-carmin">
-              <span className="h-px w-6 bg-carmin" /> Le fondateur
-            </p>
-           
-            <h2 className="mt-3 text-2xl font-bold text-navy md:text-3xl">
-              Une vision forgée à l'excellence
-            </h2>
-
-            <p className="mt-5 dark:text-slate-300 text-sm leading-relaxed text-slate-600 md:text-base">
-              Diplômé de <strong className="text-navy dark:text-white">HEC Liège</strong>,
-              Mebenga Etoundi Joseph apporte une expertise académique de
-              classe mondiale alliée à une compréhension profonde des
-              réalités du terrain.
-            </p>
-            <p className="mt-4 dark:text-slate-300 text-sm leading-relaxed text-slate-600 md:text-base">
-              Le cabinet accompagne les promoteurs, investisseurs, dirigeants
-              et institutions, avec des interventions définies selon leurs
-              besoins.
-            </p>
-
-            <blockquote className="mt-6 dark:bg-slate-800 dark:text-slate-300 border-l-4 border-carmin bg-parchemin p-5 text-sm italic leading-relaxed text-slate-600 md:text-base">
-              « Nous n'accompagnons pas seulement des structures, nous
-              éveillons des consciences organisationnelles pour assurer une
-              pérennité hors du commun. »
-            </blockquote>
-
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2">
-              <Link
-                to="/a-propos"
-                className="text-sm font-bold uppercase tracking-wide text-carmin hover:text-navy dark:hover:text-white"
-              >
-                Découvrir le parcours →
-              </Link>
-              <Link
-                to="/references"
-                className="text-sm font-bold uppercase tracking-wide text-carmin hover:text-navy dark:hover:text-white"
-              >
-                Voir les références →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* ---------- CTA FINAL ---------- */}
 

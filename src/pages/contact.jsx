@@ -62,7 +62,7 @@ export default function Contact() {
             Contactez-nous
           </h1>
           <p className="mt-4 max-w-xl text-sm text-white/70 md:text-base">
-            Expertise &amp; Conseil Stratégique à votre service. Parlons de
+            Expertise &amp; Conseil Stratégique  &amp; opérationnel à votre service. Parlons de
             vos projets d'avenir.
           </p>
         </div>
