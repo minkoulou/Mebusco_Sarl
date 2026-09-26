@@ -184,6 +184,15 @@ export default function Footer() {
             </span>
           </button>
         </div>
+
+           <hr className="my-6 border-white/10" />
+
+        <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-white/50">
+          <Link to="/confidentialite" className="hover:text-white hover:underline">
+            Confidentialité
+          </Link>
+        </div>
+ 
     </footer>
   );
 }

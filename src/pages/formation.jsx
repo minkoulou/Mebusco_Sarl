@@ -62,7 +62,7 @@ export default function Formation() {
       {/* ---------- SÉMINAIRE : PROCHAINE SESSION OUVERTE ----------*/}
           
       {nextSession.active && (
-        <div className="px-4 pt-10 md:px-8 seminaire">
+        <div className="px-4 pt-10 md:px-8 seminaire scale">
           <div className=" animate-pulse group relative mx-auto max-w-3xl overflow-hidden rounded-2xl border-2 border-carmin bg-navy p-6 shadow-[0_0_25px_-5px_rgba(200,17,46,0.5)] transition-shadow duration-500 hover:shadow-[0_0_35px_-5px_rgba(200,17,46,0.7)] dark:bg-slate-950 md:p-8">
 
             <span
@@ -70,7 +70,7 @@ export default function Formation() {
               aria-hidden="true"
             />
 
-            <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between ">
+            <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-carmin/15 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-carmin">
                   <span className="relative flex h-2 w-2">

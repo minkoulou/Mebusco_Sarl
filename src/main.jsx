@@ -15,7 +15,7 @@ import EtudesBusinessPlans from './pages/etudes-business-plans.jsx'
 import SeminaireEntreprisesFamiliales from './pages/seminaire-entreprises-familiales.jsx'
 import APropos from './pages/a-propos.jsx'
 import References from './pages/references.jsx'
-
+import Confidentialite from './pages/confidentialite'
 import './index.css'
  
  
@@ -70,7 +70,12 @@ const routes=createBrowserRouter([
    {
     path:"/contact",
     element:<Contact/>
-  }
+  },
+
+  {
+    path:"/confidentialite",
+    element:<Confidentialite/>
+  },
 ])
 
 const rootElement = document.getElementById('root')
