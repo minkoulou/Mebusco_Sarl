@@ -47,7 +47,7 @@ export default function EtudesBusinessPlans() {
         <div className="mx-auto max-w-6xl">
           <span className="block h-1 w-10 bg-carmin" />
           <h1 className="mt-4 max-w-2xl font-serif text-2xl font-bold md:text-4xl">
-            élaboration des projets, modèle d'entreprise, entreprise métaphysique, restructuration d'entreprises,
+            Élaboration des projets, modèle d'entreprise, entreprise métaphysique, restructuration d'entreprises,
           </h1>
           <p className="mt-4 max-w-xl text-sm text-white/70 md:text-base">
             De l'idée à la mise en œuvre, des livrables adaptés à votre projet.
