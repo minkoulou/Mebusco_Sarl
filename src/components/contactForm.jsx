@@ -45,7 +45,7 @@ export  function ContactForm() {
   }
 
   return (
-    <div className="rounded-2xl bg-white p-6 shadow-sm dark:bg-slate-800 md:p-8 mt-12 ">
+    <div className="rounded-2xl bg-white p-6 shadow-sm dark:bg-slate-800 md:p-8 mt-12 scale">
       <h2 className="text-lg font-bold text-navy dark:text-white">
         Formulaire de Contact
       </h2>

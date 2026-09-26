@@ -77,7 +77,7 @@ export default function References() {
 
       {/* ---------- MISSIONS ---------- */}
       <section className="px-4 py-14 md:px-8 md:py-20">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3 principal">
           {missions.map((m) => (
             <article
               key={m.titre}
@@ -103,7 +103,7 @@ export default function References() {
         </div>
 
         {/* ---------- EXEMPLE PÉDAGOGIQUE ---------- */}
-        <div className="mx-auto mt-10 max-w-6xl rounded-2xl border-l-2 border-navy bg-parchemin p-6 dark:border-slate-600 dark:bg-slate-800 md:p-8">
+        <div className="mx-auto mt-10 max-w-6xl rounded-2xl border-l-2 border-navy bg-parchemin p-6 dark:border-slate-600 dark:bg-slate-800 md:p-8 left">
           <p className="text-xs font-bold uppercase tracking-widest text-carmin">
             Exemple pédagogique
           </p>

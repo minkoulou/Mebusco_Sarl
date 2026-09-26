@@ -44,7 +44,7 @@ export default function EtudesBusinessPlans() {
 
       {/* ---------- HERO ---------- */}
       <section className="bg-navy px-4 py-12 text-white dark:bg-slate-950 md:px-8 md:py-16">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl principal">
           <span className="block h-1 w-10 bg-carmin" />
           <h1 className="mt-4 max-w-2xl font-serif text-2xl font-bold md:text-4xl">
             Élaboration des projets, modèle d'entreprise, entreprise métaphysique, restructuration d'entreprises,
@@ -63,9 +63,9 @@ export default function EtudesBusinessPlans() {
           <div
             key={s.id}
             id={s.id}
-            className={`scroll-mt-20 px-4 py-12 md:px-8 md:py-16 ${
+            className={`scroll-mt-20 px-4 py-12 md:px-8 left md:py-16 ${
               alt ? "bg-parchemin dark:bg-slate-800" : ""
-            }`}
+            }`} 
           >
             <div className="mx-auto max-w-4xl">
 

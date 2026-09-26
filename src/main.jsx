@@ -16,6 +16,7 @@ import SeminaireEntreprisesFamiliales from './pages/seminaire-entreprises-famili
 import APropos from './pages/a-propos.jsx'
 import References from './pages/references.jsx'
 
+import './index.css'
  
  
  

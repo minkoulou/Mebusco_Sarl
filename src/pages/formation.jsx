@@ -48,10 +48,10 @@ export default function Formation() {
           aria-hidden="true"
         />
         <div className="relative mx-auto max-w-6xl">
-          <h1 className="max-w-2xl font-serif text-3xl font-bold md:text-5xl">
+          <h1 className="max-w-2xl font-serif text-3xl font-bold md:text-5xl principal">
              Organisation et gestion de la force de vente, développement commercial, vente à l'exportation,
           </h1>
-          <p className="mt-4 max-w-xl text-sm text-white/70 md:text-base">
+          <p className="mt-4 max-w-xl text-sm text-white/70 md:text-base principal">
              Développez les compétences critiques de demain avec les
              programmes de formation stratégique et opérationnelle en entreprise de Mebusco SARL 
           </p>
@@ -62,7 +62,7 @@ export default function Formation() {
       {/* ---------- SÉMINAIRE : PROCHAINE SESSION OUVERTE ----------*/}
           
       {nextSession.active && (
-        <div className="px-4 pt-10 md:px-8">
+        <div className="px-4 pt-10 md:px-8 seminaire">
           <div className=" animate-pulse group relative mx-auto max-w-3xl overflow-hidden rounded-2xl border-2 border-carmin bg-navy p-6 shadow-[0_0_25px_-5px_rgba(200,17,46,0.5)] transition-shadow duration-500 hover:shadow-[0_0_35px_-5px_rgba(200,17,46,0.7)] dark:bg-slate-950 md:p-8">
 
             <span
@@ -70,7 +70,7 @@ export default function Formation() {
               aria-hidden="true"
             />
 
-            <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between ">
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full bg-carmin/15 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-carmin">
                   <span className="relative flex h-2 w-2">
@@ -145,7 +145,7 @@ export default function Formation() {
 
           {/* Carte "Packages" */}
 
-          <div className="rounded-2xl bg-white p-6 transition-all duration-300 hover:-translate-4 drop-shadow-black drop-shadow-xl dark:bg-slate-900">
+          <div className="rounded-2xl bg-white p-6 transition-all duration-300 hover:-translate-4 drop-shadow-black drop-shadow-xl dark:bg-slate-900 left">
             <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-parchemin dark:bg-slate-800">
               <PackagesIcon className="h-5 w-5 text-navy dark:text-white" strokeWidth={1.6} />
             </span>
@@ -167,7 +167,7 @@ export default function Formation() {
           </div>
 
           {/* Carte "Sur-mesure" */}
-          <div className="rounded-2xl bg-navy p-6 dark:bg-slate-950 transition-all duration-300 hover:scale-95 drop-shadow-black drop-shadow-xl">
+          <div className="rounded-2xl bg-navy p-6 dark:bg-slate-950 transition-all duration-300 hover:scale-95 drop-shadow-black drop-shadow-xl right">
             <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10">
               <SurMesureIcon className="h-5 w-5 text-white" strokeWidth={1.6} />
             </span>

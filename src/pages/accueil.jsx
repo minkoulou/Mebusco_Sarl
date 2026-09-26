@@ -18,7 +18,7 @@ export default function Accueil() {
 
     const location=useLocation()
   return (
-    <div className="bg-white pb-16 dark:bg-slate-900 md:pb-0">
+    <div className="bg-white pb-16 dark:bg-slate-900 md:pb-0 ">
        
        <Seo
         title="Études, business plans et formations à Yaoundé"
@@ -51,13 +51,13 @@ export default function Accueil() {
         <div className="pointer-events-none absolute -top-24 -right-24 h-80 w-80 rounded-full bg-carmin/25 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-white/10 blur-3xl" />
         
-        <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center">
+        <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center principal">
 
-            <span className="inline-block bg-carmin px-3 py-1.5 text-xs font-bold uppercase tracking-wider">
+            <span className="inline-block bg-carmin px-3 py-1.5 text-xs font-bold uppercase tracking-wider principal">
               Conseil aux entrepreneurs et dirigeants
             </span>
 
-            <h1 className="mt-6 text-4xl font-extrabold uppercase leading-[1.1] tracking-tight md:text-5xl">
+            <h1 className="mt-6 text-4xl font-extrabold uppercase leading-[1.1] tracking-tight md:text-5xl principal">
               Études, business plans et formations
             </h1>
 
@@ -69,7 +69,7 @@ export default function Accueil() {
               <span className="h-px w-10 bg-carmin/60" />
             </div>
 
-            <p className="mx-auto mt-6 max-w-2xl text-base font-medium text-white/85 md:text-lg">
+            <p className="mx-auto mt-6 max-w-2xl text-base font-medium text-white/85 md:text-lg principal">
               Évaluez la faisabilité de votre projet, structurez son financement et développez les compétences de votre équipe avec Mebusco.
             </p>
 
@@ -83,9 +83,9 @@ export default function Accueil() {
               </Link>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-semibold uppercase tracking-wide text-white/60">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-semibold uppercase tracking-wide text-white/60 ">
               <span>À Yaoundé  en présentiel et à distance</span>
-              <span className="h-1 w-1 rounded-full bg-white/30" />
+              <span className="h-1 w-1 rounded-full bg-white/30 principal" />
               <span>Un accompagnement sur mesure</span>
             </div>
 
