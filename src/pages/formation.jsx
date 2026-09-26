@@ -49,7 +49,7 @@ export default function Formation() {
         />
         <div className="relative mx-auto max-w-6xl">
           <h1 className="max-w-2xl font-serif text-3xl font-bold md:text-5xl">
-            L'Excellence par la Transmission
+             organisation et gestion de la force de vente, développement commercial, vente à l'exportation,
           </h1>
           <p className="mt-4 max-w-xl text-sm text-white/70 md:text-base">
              Développez les compétences critiques de demain avec les
