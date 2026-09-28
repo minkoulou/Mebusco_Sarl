@@ -173,7 +173,7 @@ export default function Comprehension() {
         <div className="mx-auto max-w-6xl md:grid md:grid-cols-12 md:items-center md:gap-12">
           <div className="relative md:col-span-5">
             <img
-              src="/mebenga.jpeg"
+              src="/Mebenga.jpeg"
               alt="Mebenga Etoundi Joseph, fondateur et expert consultant chez Mebusco"
               className="h-105 w-full rounded-xs object-cover shadow-2xl shadow-navy md:h-140"
             />
