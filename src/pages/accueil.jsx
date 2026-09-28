@@ -8,13 +8,13 @@ import Button from '../components/boutons'
 import Footer from "../components/footer";
 import { Whatsapp } from "../components/whatsapp";
 import { Seo, organizationJsonLd } from "../components/seo";
-
 const serviceIcons = [ChartNoAxesCombined, FileChartColumn, Compass];
 
 // import {}
 
 
 export default function Accueil() {
+
 
     const location=useLocation()
   return (
@@ -84,7 +84,7 @@ export default function Accueil() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-semibold uppercase tracking-wide text-white/60 ">
-              <span>À Yaoundé  en présentiel et à distance</span>
+              <span>En présentiel et à distance</span>
               <span className="h-1 w-1 rounded-full bg-white/30 principal" />
               <span>Un accompagnement sur mesure</span>
             </div>
