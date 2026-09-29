@@ -59,7 +59,7 @@ export default function APropos() {
 
           <div className="relative md:col-span-5 left">
             <img
-              src="/Mebenga.jpeg"
+              src="/fondateur.jpeg"
               alt="Joseph Mebenga Etoundi, fondateur et consultant chez Mebusco"
               className="h-105 w-full object-cover md:h-140 rounded-xs shadow-2xl shadow-navy"
             />
