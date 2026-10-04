@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { CircleCheck, Calendar, Clock, MapPin, ArrowRight } from "lucide-react";
+import { CircleCheck, Calendar, Clock, MapPin, ArrowRight,FileDown } from "lucide-react";
 import { NavBar } from "../components/navbar";
 import Footer from "../components/footer";
 import { formats, methodology, nextSession } from "../data/formations";
@@ -58,6 +58,8 @@ export default function Formation() {
         </div>
       </section>
 
+      {/* <a href="/SEMINAIRE_A_PARTICIPATION_INDIVIDUELLE_HOTEL_CONCORDE_YAOUNDE.pdf">TDR A CONSULTER</a> */}
+
 
       {/* ---------- SÉMINAIRE : PROCHAINE SESSION OUVERTE ----------*/}
           
@@ -104,6 +106,7 @@ export default function Formation() {
                 </p>
               </div>
 
+            <div className="flex flex-col">
               <Link
                 to={seminar.path}
                 className="group/btn flex shrink-0 items-center justify-center gap-2 rounded-xl bg-carmin px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:brightness-110"
@@ -114,10 +117,25 @@ export default function Formation() {
                   strokeWidth={2}
                 />
               </Link>
+                       {/* lien de consultation du document pdf de  */}
+                   <a
+                     href="/SEMINAIRE_A_PARTICIPATION_INDIVIDUELLE_HOTEL_CONCORDE_YAOUNDE.pdf"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="mt-8 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
+                   >
+              <FileDown className="h-5 w-5" strokeWidth={1.8} />
+              Consulter les termes de référence (PDF)
+            </a>
+
+           </div>
+
+
+
             </div>
           </div>
           <p className="mt-3 text-center text-xs text-white/60 md:text-sm">
-            Lieu à confirmer. Une demande via le site est une préinscription, sans paiement ni place garantie.
+           Une demande via le site est une préinscription, sans paiement ni place garantie.
           </p>
         </div>
       )}

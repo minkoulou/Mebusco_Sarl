@@ -9,10 +9,10 @@ import { Archive, Compass, BookOpen, LineChart, Handshake } from "lucide-react";
 export const nextSession = {
   active: true,
   title: "Séminaire : Entreprises familiales",
-  date: "24 au 26 novembre 2026",
-  duree: "3 jours, 2 nuitées",
-  lieu: "Région de Yaoundé — hôtel à confirmer",
-  price: "350 000 FCFA TTC",
+  date: "DU 25 au 26 Novembre",
+  duree: "3 jours",
+  lieu: "YAOUNDE  À L'HOTEL CONCORDE",
+  price: "295 740 FCFA TTC",
 };
 
 export const formats = {

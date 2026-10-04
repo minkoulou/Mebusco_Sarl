@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { CalendarDays, Clock, MapPin, Check } from "lucide-react";
+import { CalendarDays, Clock, MapPin, Check,FileDown } from "lucide-react";
 import { NavBar } from "../components/navbar";
 import Footer from "../components/footer";
 import { Whatsapp } from "../components/whatsapp";
@@ -80,6 +80,18 @@ export default function SeminaireEntreprisesFamiliales() {
                 {seminar.lieu}
               </span>
             </div>
+
+            {/*Lien consultation du dssier de reference pdf */}
+               <a
+                     href="/SEMINAIRE_A_PARTICIPATION_INDIVIDUELLE_HOTEL_CONCORDE_YAOUNDE.pdf"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="mt-8 flex items-center gap-2 text-xs font-bold text-shadow-amber-50 uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
+                   >
+              <FileDown className="h-5 w-5" strokeWidth={1.8} />
+              Consulter les termes de référence (PDF)
+            </a>
+
           </div>
 
           <aside className="rounded-2xl border-2 border-white/15 bg-white/5 p-6 shadow-[6px_6px_0_rgba(200,17,46,0.35)] backdrop-blur-sm md:col-span-5">
@@ -152,7 +164,7 @@ export default function SeminaireEntreprisesFamiliales() {
             Le parcours pédagogique
           </p>
           <h2 className="mt-2 text-xl font-bold text-navy dark:text-white md:text-2xl">
-            Trois jours pour construire votre feuille de route
+            Deux jours pour construire votre feuille de route
           </h2>
 
           <div className="mt-8 space-y-6">
@@ -225,9 +237,7 @@ export default function SeminaireEntreprisesFamiliales() {
               À votre charge
             </h3>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
-              Le déplacement jusqu'à l'hôtel, le dîner du premier jour et
-              toute consommation ou prestation non incluse. Le lieu et les
-              modalités d'accueil seront précisés avant confirmation.
+               le déplacement à l'hôtel. Toute consommation ou prestation non incluse.
             </p>
           </div>
 

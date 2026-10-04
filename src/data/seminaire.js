@@ -4,10 +4,10 @@
  */
 
 export const seminar = {
-  dates: "24 au 26 novembre 2026",
-  duree: "3 jours · 2 nuitées",
-  lieu: "Région de Yaoundé — hôtel à confirmer",
-  prix: "350 000 FCFA TTC",
+  dates: "25 au 26 Novembre ",
+  duree: "2 jours",
+  lieu: "YAOUNDE  À L'HOTEL CONCORDE",
+  prix: " 295 740 FCFA TTC",
 };
 
 export const publicCible = [
@@ -42,26 +42,19 @@ export const quatreAxes = [
 
 export const programme = [
   {
-    date: "24 novembre",
-    titre: "Comprendre pour diagnostiquer",
+    date: "25 novembre",
+    titre: "Comprendre les entreprises familiales et les enjeux de leur pérennité",
     texte:
       "Famille, entreprise et patrimoine ; dépendance au fondateur ; facteurs de fragilité ; longévité des entreprises plurigénérationnelles.",
     resultat: "Atelier : diagnostic de votre entreprise.",
   },
   {
-    date: "25 novembre",
-    titre: "Gouverner pour transmettre",
+    date: "26 novembre",
+    titre: "Examiner les dispositifs et construire les propositions d'action",
     texte:
       "Gouvernance, rôles des héritiers et dirigeants, préparation de la transmission et expériences internationales. Regard africain et discussion du modèle J.E. Mebenga.",
     resultat: "Soirée : dîner-échange confidentiel entre pairs.",
-  },
-  {
-    date: "26 novembre",
-    titre: "Agir pour pérenniser",
-    texte:
-      "Clinique des entreprises familiales, schéma cible de gouvernance et de transmission, plan d'action progressif.",
-    resultat: "Atelier : feuille de route et décisions prioritaires.",
-  },
+  }
 ];
 
 export const dossierPerennisation = [
@@ -72,9 +65,7 @@ export const dossierPerennisation = [
 ];
 
 export const forfaitInclus = [
-  "Les trois jours de formation et les supports",
-  "Deux nuitées avec petit déjeuner",
-  "Les trois déjeuners et les pauses café du programme",
-  "Le dîner du deuxième jour avec boissons",
+  "Les Deux jours de formation et les supports",
+  "Les Deux déjeuners et 4 pauses cafés",
   "Une attestation de participation",
 ];
