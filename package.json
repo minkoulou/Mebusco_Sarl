@@ -28,9 +28,9 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^17.7.0",
+    "react-snap": "^1.23.0",
     "vite": "^8.1.1"
   },
-
   "reactSnap": {
     "source": "dist",
     "minifyHtml": {
@@ -45,9 +45,14 @@
       "/notre-comprehension-entreprise",
       "/approche-classique",
       "/approche-metaphysique",
+      "/etudes-business-plans",
+      "/seminaire-entreprises-familiales",
+      "/a-propos",
+      "/references",
       "/formation",
-      "/contact"
+      "/contact",
+      "/confidentialite",
+      "/404.html"
     ]
   }
 }
-

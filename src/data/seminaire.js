@@ -53,7 +53,7 @@ export const programme = [
     titre: "Examiner les dispositifs et construire les propositions d'action",
     texte:
       "Gouvernance, rôles des héritiers et dirigeants, préparation de la transmission et expériences internationales. Regard africain et discussion du modèle J.E. Mebenga.",
-    resultat: "Soirée : dîner-échange confidentiel entre pairs.",
+    resultat: "",
   }
 ];
 

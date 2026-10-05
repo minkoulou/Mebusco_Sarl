@@ -16,11 +16,18 @@ import SeminaireEntreprisesFamiliales from './pages/seminaire-entreprises-famili
 import APropos from './pages/a-propos.jsx'
 import References from './pages/references.jsx'
 import Confidentialite from './pages/confidentialite'
+import { NOTFOUND } from './pages/NotFound.jsx'
 import './index.css'
  
  
  
 const routes=createBrowserRouter([
+
+  {
+    path:"*",
+    element:<NOTFOUND/>
+  },
+  
   {
     path:"/",
     element:<Accueil/>
