@@ -102,8 +102,7 @@ export default function SeminaireEntreprisesFamiliales() {
               {seminar.prix}
             </p>
             <p className="mt-3 text-sm text-white/70">
-              Hébergement, restauration prévue au programme et supports pédagogiques.
-            </p>
+              Deux jours de formation et les supports pédagogiques , deux déjeuners et quatre pauses café-attestation de participation.            </p>
             <div className="mt-5">
               <Button chemin='/contact' nom='demander une préinscription' bg='bg-white' color='text-black'/>
             </div>

@@ -7,6 +7,7 @@ export function NOTFOUND (){
           <main className="flex flex-col justify-center items-center">
 
              <div className="min-h-screen flex flex-col max-w-6xl items-center justify-center gap-6">
+
                 <Frown size={72} className="text-gray-600"/>
 
                 <h1 className="text-7xl px-2 capitalize font-bold text-slate-800 text-center">oups !</h1>
