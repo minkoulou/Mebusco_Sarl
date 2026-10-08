@@ -119,7 +119,7 @@ export default function Formation() {
               </Link>
                        {/* lien de consultation du document pdf de  */}
                    <a
-                     href="/SEMINAIRE_A_PARTICIPATION_INDIVIDUELLE_HOTEL_CONCORDE_YAOUNDE.pdf"
+                     href="/TDR_SEMINAIRE_HOTEL_CONCORDE_YAOUNDE_CORRIGES.pdf"
                      target="_blank"
                      rel="noopener noreferrer"
                      className="mt-8 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
