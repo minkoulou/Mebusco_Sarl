@@ -40,60 +40,80 @@
   10%{
     transform: translateY(90px);
     opacity: 10%;
+    backdrop-filter: blur(9px);
+
   }
 
 
   20%{
     transform: translateY(80px);
     opacity: 20%;
+    backdrop-filter: blur(8px);
+
   }
 
 
   30%{
     transform: translateY(70px);
     opacity: 30%;
+        backdrop-filter: blur(7px);
+
   }
 
 
   40%{
     transform: translateY(60px);
     opacity: 40%;
+        backdrop-filter: blur(6px);
+
   }
 
 
   50%{
     transform: translateY(50px);
     opacity: 50%;
+        backdrop-filter: blur(5px);
+
   }
 
 
   60%{
     transform: translateY(40px);
     opacity: 60%;
+        backdrop-filter: blur(4px);
+
   }
 
 
   70%{
     transform: translateY(30px);
     opacity: 70%;
+        backdrop-filter: blur(3px);
+
   }
 
 
   80%{
     transform: translateY(20px);
     opacity: 80%;
+        backdrop-filter: blur(2px);
+
   }
 
 
   90%{
     transform: translateY(10px);
     opacity: 90%;
+        backdrop-filter: blur(1px);
+
   }
 
 
   100%{
     transform: translateY(0px);
     opacity: 100%;
+        backdrop-filter: blur(0px);
+
   }
 }
 
