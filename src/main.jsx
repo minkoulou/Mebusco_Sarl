@@ -17,11 +17,16 @@ import APropos from './pages/a-propos.jsx'
 import References from './pages/references.jsx'
 import Confidentialite from './pages/confidentialite'
 import { NOTFOUND } from './pages/NotFound.jsx'
+import { PageAnimations } from './components/pageAnimations.jsx'
 import './index.css'
  
  
  
 const routes=createBrowserRouter([
+ {
+  // Route parente : animations d'ouverture et de scroll sur toutes les pages
+  element:<PageAnimations/>,
+  children:[
 
   {
     path:"*",
@@ -83,6 +88,8 @@ const routes=createBrowserRouter([
     path:"/confidentialite",
     element:<Confidentialite/>
   },
+  ]
+ }
 ])
 
 const rootElement = document.getElementById('root')

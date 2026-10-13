@@ -52,13 +52,13 @@ export default function Accueil() {
         <div className="pointer-events-none absolute -top-24 -right-24 h-80 w-80 rounded-full bg-carmin/25 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-white/10 blur-3xl" />
         
-        <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center principal">
+        <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center" data-reveal-group>
 
-            <span className="inline-block bg-carmin px-3 py-1.5 text-xs font-bold uppercase tracking-wider principal">
+            <span className="inline-block bg-carmin px-3 py-1.5 text-xs font-bold uppercase tracking-wider">
               Conseil aux entrepreneurs et dirigeants
             </span>
 
-            <h1 className="mt-6 text-4xl font-extrabold uppercase leading-[1.1] tracking-tight md:text-5xl principal">
+            <h1 className="mt-6 text-4xl font-extrabold uppercase leading-[1.1] tracking-tight md:text-5xl">
               Études, business plans et formations
             </h1>
 
@@ -70,7 +70,7 @@ export default function Accueil() {
               <span className="h-px w-10 bg-carmin/60" />
             </div>
 
-            <p className="mx-auto mt-6 max-w-2xl text-base font-medium text-white/85 md:text-lg principal">
+            <p className="mx-auto mt-6 max-w-2xl text-base font-medium text-white/85 md:text-lg">
               Évaluez la faisabilité de votre projet, structurez son financement et développez les compétences de votre équipe avec Mebusco.
             </p>
 
@@ -86,7 +86,7 @@ export default function Accueil() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-semibold uppercase tracking-wide text-white/60 ">
               <span>En présentiel et à distance</span>
-              <span className="h-1 w-1 rounded-full bg-white/30 principal" />
+              <span className="h-1 w-1 rounded-full bg-white/30" />
               <span>Un accompagnement sur mesure</span>
             </div>
 

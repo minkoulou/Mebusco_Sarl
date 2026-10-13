@@ -37,7 +37,7 @@ export default function Confidentialite() {
 
       {/* ---------- HERO ---------- */}
       <section className="bg-navy px-4 py-12 text-white dark:bg-slate-950 md:px-8 md:py-16 ">
-        <div className="mx-auto max-w-6xl principal">
+        <div className="mx-auto max-w-6xl">
           <span className="block h-1 w-10 bg-carmin" />
           <p className="mt-4 text-xs font-bold uppercase tracking-widest text-carmin ">
             Informations pratiques

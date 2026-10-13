@@ -57,7 +57,7 @@ export default function APropos() {
       <section className="px-4 py-14 md:px-8 md:py-20">
         <div className="mx-auto max-w-6xl md:grid md:grid-cols-12 md:items-center md:gap-12">
 
-          <div className="relative md:col-span-5 left">
+          <div className="relative md:col-span-5" data-reveal="left">
             <img
               src="/fondateur.jpeg"
               alt="Joseph Mebenga Etoundi, fondateur et consultant chez Mebusco"
@@ -73,7 +73,7 @@ export default function APropos() {
             </div>
           </div>
 
-          <div className="mt-10 md:col-span-7 md:mt-0 right">
+          <div className="mt-10 md:col-span-7 md:mt-0" data-reveal="right">
             <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-carmin">
               <span className="h-px w-6 bg-carmin" /> Fondateur et consultant
             </p>

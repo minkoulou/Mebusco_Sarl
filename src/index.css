@@ -22,290 +22,53 @@
 }
 
 
+/* ---------- Apparition des blocs (voir components/pageAnimations.jsx) ----------
+   Animation plutôt que transition : elle ne remplace pas les transitions
+   (hover, thème) déjà définies sur les éléments.
+   Variantes : data-reveal="left" | "right" | "zoom" | "fade" (par défaut : montée). */
 
-.principal{
-  animation-name: scroll;
-  animation-duration:1s;
-  animation-delay: 0s;
-  animation-timing-function: ease-in-out;
+:root {
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@keyframes scroll {
+.reveal {
+  --reveal-x: 0px;
+  --reveal-y: 24px;
+  --reveal-scale: 1;
+}
 
-  0%{
-    transform: translateY(100px);
+.reveal[data-reveal="left"]  { --reveal-x: -40px; --reveal-y: 0px; }
+.reveal[data-reveal="right"] { --reveal-x: 40px;  --reveal-y: 0px; }
+.reveal[data-reveal="zoom"]  { --reveal-y: 0px;   --reveal-scale: 0.96; }
+.reveal[data-reveal="fade"]  { --reveal-y: 0px; }
+
+/* Sur mobile les colonnes sont empilées : un glissement latéral
+   pourrait provoquer un défilement horizontal, on monte simplement. */
+@media (width < 48rem) {
+  .reveal[data-reveal="left"],
+  .reveal[data-reveal="right"] { --reveal-x: 0px; --reveal-y: 24px; }
+}
+
+.reveal:not(.is-visible) {
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  animation: reveal 800ms var(--ease-out-expo) var(--reveal-delay, 0ms) backwards;
+}
+
+@keyframes reveal {
+  from {
     opacity: 0;
-  }
-
-  10%{
-    transform: translateY(90px);
-    opacity: 10%;
-    backdrop-filter: blur(9px);
-
-  }
-
-
-  20%{
-    transform: translateY(80px);
-    opacity: 20%;
-    backdrop-filter: blur(8px);
-
-  }
-
-
-  30%{
-    transform: translateY(70px);
-    opacity: 30%;
-        backdrop-filter: blur(7px);
-
-  }
-
-
-  40%{
-    transform: translateY(60px);
-    opacity: 40%;
-        backdrop-filter: blur(6px);
-
-  }
-
-
-  50%{
-    transform: translateY(50px);
-    opacity: 50%;
-        backdrop-filter: blur(5px);
-
-  }
-
-
-  60%{
-    transform: translateY(40px);
-    opacity: 60%;
-        backdrop-filter: blur(4px);
-
-  }
-
-
-  70%{
-    transform: translateY(30px);
-    opacity: 70%;
-        backdrop-filter: blur(3px);
-
-  }
-
-
-  80%{
-    transform: translateY(20px);
-    opacity: 80%;
-        backdrop-filter: blur(2px);
-
-  }
-
-
-  90%{
-    transform: translateY(10px);
-    opacity: 90%;
-        backdrop-filter: blur(1px);
-
-  }
-
-
-  100%{
-    transform: translateY(0px);
-    opacity: 100%;
-        backdrop-filter: blur(0px);
-
+    transform: translate3d(var(--reveal-x), var(--reveal-y), 0) scale(var(--reveal-scale));
   }
 }
 
-
-.left{
-  animation-name: scrollleft;
-  animation-duration:1s;
-  animation-delay: 0s;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes scrollleft {
-
-  0%{
-    transform: translateX(-100px);
-    opacity: 0;
+@media (prefers-reduced-motion: reduce), print {
+  .reveal:not(.is-visible) {
+    opacity: 1;
   }
-
-  10%{
-    transform: translate(-90px);
-    opacity: 10%;
+  .reveal.is-visible {
+    animation: none;
   }
-
-
-  20%{
-    transform: translateX(-80px);
-    opacity: 20%;
-  }
-
-
-  30%{
-    transform: translateX(-70px);
-    opacity: 30%;
-  }
-
-
-  40%{
-    transform: translateX(-60px);
-    opacity: 40%;
-  }
-
-
-  50%{
-    transform: translateX(-50px);
-    opacity: 50%;
-  }
-
-
-  60%{
-    transform: translateX(-40px);
-    opacity: 60%;
-  }
-
-
-  70%{
-    transform: translateX(-30px);
-    opacity: 70%;
-  }
-
-
-  80%{
-    transform: translateX(-20px);
-    opacity: 80%;
-  }
-
-
-  90%{
-    transform: translateX(-10px);
-    opacity: 90%;
-  }
-
-
-  100%{
-    transform: translateX(0px);
-    opacity: 100%;
-  }
-}
-
-
-.right{
-  animation-name: scrollright;
-  animation-duration:1s;
-  animation-delay: 0s;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes scrollright {
-
-  0%{
-    transform: translateX(100px);
-    opacity: 0;
-  }
-
-  10%{
-    transform: translateX(90px);
-    opacity: 10%;
-  }
-
-
-  20%{
-    transform: translateX(80px);
-    opacity: 20%;
-  }
-
-
-  30%{
-    transform: translateX(70px);
-    opacity: 30%;
-  }
-
-
-  40%{
-    transform: translateX(60px);
-    opacity: 40%;
-  }
-
-
-  50%{
-    transform: translateX(50px);
-    opacity: 50%;
-  }
-
-
-  60%{
-    transform: translateX(40px);
-    opacity: 60%;
-  }
-
-
-  70%{
-    transform: translateX(30px);
-    opacity: 70%;
-  }
-
-
-  80%{
-    transform: translateX(20px);
-    opacity: 80%;
-  }
-
-
-  90%{
-    transform: translateX(10px);
-    opacity: 90%;
-  }
-
-
-  100%{
-    transform: translateX(0px);
-    opacity: 100%;
-  }
-}
-
-
-.scale{
-  
-  animation-name:big;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes big {
-
-  0%{
-    opacity: 0;
-    transform: scale(0.5);
-  }
-
-  20%{
-    opacity: 20%;
-    transform: scale(0.6);
-  }
-
-  40%{
-    opacity: 40%;
-    transform: scale(0.7);
-  }
-  
-  60%{
-    opacity: 60%;
-    transform: scale(0.8);
-    
-  }
-
-  80%{
-    opacity: 70%;
-    transform: scale(0.9);
-  }
-
-  100%{
-    opacity: 100%;
-    transform: scale(1);
-  }
-
 }
