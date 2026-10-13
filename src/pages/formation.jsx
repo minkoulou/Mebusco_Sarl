@@ -58,7 +58,6 @@ export default function Formation() {
         </div>
       </section>
 
-      {/* <a href="/SEMINAIRE_A_PARTICIPATION_INDIVIDUELLE_HOTEL_CONCORDE_YAOUNDE.pdf">TDR A CONSULTER</a> */}
 
 
       {/* ---------- SÉMINAIRE : PROCHAINE SESSION OUVERTE ----------*/}
