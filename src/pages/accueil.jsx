@@ -8,6 +8,7 @@ import Button from '../components/boutons'
 import Footer from "../components/footer";
 import { Whatsapp } from "../components/whatsapp";
 import { Seo, organizationJsonLd } from "../components/seo";
+import { seminar } from "../data/seminaire";
 const serviceIcons = [ChartNoAxesCombined, FileChartColumn, Compass];
 
 // import {}
@@ -104,12 +105,12 @@ export default function Accueil() {
       {/* ---------- BANDEAU SÉMINAIRE ---------- */}
 
       <Link
-        to="/seminaire-entreprises-familiales"
+        to={seminar.path}
         className="flex flex-col items-center gap-2 border-b border-slate-100 bg-parchemin px-4 py-3 text-center text-xs font-semibold text-navy hover:bg-parchemin/70 dark:border-slate-800 dark:bg-slate-800 dark:text-white sm:flex-row sm:justify-center sm:gap-4 sm:text-sm md:px-8"
       >
         <span className="flex items-center gap-2">
           <CalendarDays className="h-4 w-4 text-carmin" strokeWidth={1.8} />
-          24–26 novembre 2026 · Entreprises familiales
+          {seminar.datesCourtes} · Entreprises familiales
         </span>
         <span className="flex items-center gap-1 text-carmin">
           Programme et préinscription <ArrowRight className="h-3.5 w-3.5" />

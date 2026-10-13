@@ -3,7 +3,7 @@ import { CircleCheck, Calendar, Clock, MapPin, ArrowRight,FileDown } from "lucid
 import { NavBar } from "../components/navbar";
 import Footer from "../components/footer";
 import { formats, methodology, nextSession } from "../data/formations";
-import { seminar } from "../data/site";
+import { seminar } from "../data/seminaire";
 import {Whatsapp} from '../components/whatsapp'
 import { Seo, breadcrumbJsonLd } from "../components/seo";
 

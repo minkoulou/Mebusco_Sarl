@@ -1,18 +1,17 @@
 import { Archive, Compass, BookOpen, LineChart, Handshake } from "lucide-react";
+import { seminar } from "./seminaire";
 
 /**
- * Prochaine session ouverte aux préinscriptions.
- * Remplace l'ancien encart "15 Octobre 2026 / Zoom" (démonstration, sans
- * lien réel) par le vrai séminaire résidentiel, dont les dates et le tarif
- * sont confirmés (voir src/data/site.js). Le lieu reste à confirmer.
+ * Prochaine session ouverte aux préinscriptions : le séminaire résidentiel,
+ * dont les informations viennent de src/data/seminaire.js.
  */
 export const nextSession = {
   active: true,
-  title: "Séminaire : Entreprises familiales",
-  date: "DU 25 au 26 Novembre",
-  duree: "3 jours",
-  lieu: "YAOUNDE  À L'HOTEL CONCORDE",
-  price: "295 740 FCFA TTC",
+  title: seminar.title,
+  date: seminar.dates,
+  duree: seminar.duree,
+  lieu: seminar.lieu,
+  price: seminar.prix,
 };
 
 export const formats = {

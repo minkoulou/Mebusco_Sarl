@@ -3,11 +3,16 @@
  * validé avec le client (audit commercial + contenu déjà rédigé).
  */
 
+// Source unique des informations pratiques du séminaire : l'accueil, la page
+// formation et la page séminaire lisent toutes ces valeurs.
 export const seminar = {
-  dates: "25 au 26 Novembre ",
+  path: "/seminaire-entreprises-familiales",
+  title: "Séminaire : Entreprises familiales",
+  dates: "25 au 26 novembre 2026",
+  datesCourtes: "25–26 novembre 2026",
   duree: "2 jours",
-  lieu: "YAOUNDE  À L'HOTEL CONCORDE",
-  prix: " 295 740 FCFA TTC",
+  lieu: "Yaoundé, Hôtel Concorde",
+  prix: "295 740 FCFA TTC",
 };
 
 export const publicCible = [
@@ -65,7 +70,7 @@ export const dossierPerennisation = [
 ];
 
 export const forfaitInclus = [
-  "Les Deux jours de formation et les supports",
-  "Les Deux déjeuners et 4 pauses cafés",
+  "Les deux jours de formation et les supports",
+  "Les deux déjeuners et 4 pauses café",
   "Une attestation de participation",
 ];
