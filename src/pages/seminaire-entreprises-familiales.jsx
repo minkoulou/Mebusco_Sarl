@@ -83,7 +83,7 @@ export default function SeminaireEntreprisesFamiliales() {
 
             {/*Lien consultation du dssier de reference pdf */}
                <a
-                     href="/TDR_SEMINAIRE_HOTEL_CONCORDE_YAOUNDE_CORRIGES.pdf"
+                     href="/TDR_SEMINAIRE_HOTEL_CONCORDE_YAOUNDE_CORRIGES_02_03_DECEMBRE_2026.pdf"
                      target="_blank"
                      rel="noopener noreferrer"
                      className="mt-8 flex items-center gap-2 text-xs font-bold text-shadow-amber-50 uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"

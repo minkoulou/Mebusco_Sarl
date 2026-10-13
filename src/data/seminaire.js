@@ -8,8 +8,8 @@
 export const seminar = {
   path: "/seminaire-entreprises-familiales",
   title: "Séminaire : Entreprises familiales",
-  dates: "25 au 26 novembre 2026",
-  datesCourtes: "25–26 novembre 2026",
+  dates: "02 au 03 décembre 2026",
+  datesCourtes: "02–03 décembre 2026",
   duree: "2 jours",
   lieu: "Yaoundé, Hôtel Concorde",
   prix: "295 740 FCFA TTC",
@@ -47,14 +47,14 @@ export const quatreAxes = [
 
 export const programme = [
   {
-    date: "25 novembre",
+    date: "02 décembre",
     titre: "Comprendre les entreprises familiales et les enjeux de leur pérennité",
     texte:
       "Famille, entreprise et patrimoine ; dépendance au fondateur ; facteurs de fragilité ; longévité des entreprises plurigénérationnelles.",
     resultat: "Atelier : diagnostic de votre entreprise.",
   },
   {
-    date: "26 novembre",
+    date: "03 décembre",
     titre: "Examiner les dispositifs et construire les propositions d'action",
     texte:
       "Gouvernance, rôles des héritiers et dirigeants, préparation de la transmission et expériences internationales. Regard africain et discussion du modèle J.E. Mebenga.",
