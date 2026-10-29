@@ -103,7 +103,7 @@ export default function Accueil() {
         {/* bandeau flyer de presentation du seminaire  */}
 
       <div className="w-full h- flex justify-center items-center pt-4">
-         <img src="/bandeauseminaire.jpeg" className="opacity-80"/>
+         <img src="/bandeauseminaire.jpeg" className="opacity-80 rounded-2xl"/>
       </div>
 
       </section>
