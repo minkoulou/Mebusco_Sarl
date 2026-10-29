@@ -96,9 +96,15 @@ export default function Accueil() {
 
         <div className="pointer-events-none absolute bottom-6 left-1/2 hidden -translate-x-1/2 animate-bounce md:block" aria-hidden="true">
           <span className="block h-8 w-5 rounded-full border-2 border-white/40">
-            <span className="mx-auto mt-1.5 block h-2 w-1 rounded-full bg-white/70" />
+            <span className="mx-auto mt-1.5 block h-2 w-1 rounded-full bg-white/70"/>
           </span>
         </div>
+
+        {/* bandeau flyer de presentation du seminaire  */}
+
+      <div className="w-full h- flex justify-center items-center pt-4">
+         <img src="/bandeauseminaire.jpeg" className="opacity-80"/>
+      </div>
 
       </section>
 
@@ -116,6 +122,7 @@ export default function Accueil() {
           Programme et préinscription <ArrowRight className="h-3.5 w-3.5" />
         </span>
       </Link>
+
 
       {/* ---------- NOS PRESTATIONS ---------- */}
 
