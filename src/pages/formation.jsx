@@ -124,7 +124,7 @@ export default function Formation() {
                      className="mt-8 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
                    >
               <FileDown className="h-5 w-5" strokeWidth={1.8} />
-              Consulter les termes de référence (PDF)
+              Consulter le dépliant du séminaire
             </a>
 
            </div>
