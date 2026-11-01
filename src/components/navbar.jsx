@@ -44,7 +44,7 @@ export  function NavBar({ currentPath = "/" }) {
                 <Link
                   key={link.Key}
                   to={`${link.path}`}
-                  className={`text-sm  tracking-wide transition-all hover:duration-400 hover:text-white  hover:font-bold ${
+                  className={`text-sm  tracking-wide transition-all duration-800 hover:text-white  hover:font-bold ${
                     isActive ? "text-white font-bold text-shadow-white text-shadow-xs" : "text-white/70"
                   }`}
                   aria-current={isActive ? "page" : undefined}
@@ -56,6 +56,7 @@ export  function NavBar({ currentPath = "/" }) {
           </nav>
 
           {/* CTA — desktop uniquement */}
+
           <div className="hidden md:flex md:items-center justify-end mr-8">
             <Link
               to={"/contact"}
@@ -155,7 +156,7 @@ export  function NavBar({ currentPath = "/" }) {
               }`}
             >
               <Icon className="h-5.5 w-5.5  dark:text-white" strokeWidth={1.6} />
-              <span className="leading-none">{link.shortLabel}</span>
+              <span className="leading-none text-[8px] text-center">{link.shortLabel}</span>
             </Link>
           );
         })}

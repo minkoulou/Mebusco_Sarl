@@ -1,10 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
-import { CircleCheck, Calendar, Clock, MapPin, ArrowRight,FileDown } from "lucide-react";
+import { CircleCheck, Calendar, Clock, MapPin, ArrowRight, FileDown } from "lucide-react";
 import { NavBar } from "../components/navbar";
 import Footer from "../components/footer";
 import { formats, methodology, nextSession } from "../data/formations";
 import { seminar } from "../data/seminaire";
-import {Whatsapp} from '../components/whatsapp'
+import { Whatsapp } from '../components/whatsapp'
 import { Seo, breadcrumbJsonLd } from "../components/seo";
 
 
@@ -15,7 +15,7 @@ export default function Formation() {
 
   return (
     <div className="relative bg-white pb-16 dark:bg-slate-900 md:pb-0">
-      
+
       <Seo
         title="Formation en Entreprise à Yaoundé | Mebusco SARL"
         description="Mebusco SARL propose des formations en création et gestion d'entreprise à Yaoundé, Cameroun, en formats packagés ou sur-mesure pour votre équipe."
@@ -25,247 +25,275 @@ export default function Formation() {
           { name: "Formation", path: "/formation" },
         ])}
       />
-      
+
       <NavBar currentPath={location.pathname} />
 
       <main>
 
-      {/* ---------- FIL D'ARIANE ---------- */}
-      <div className="border-b border-slate-100 bg-white px-4 py-3 dark:border-slate-800 dark:bg-slate-900 md:px-8">
-        <div className="mx-auto max-w-6xl text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
-          <Link to="/" className="hover:text-carmin">
-            Accueil
-          </Link>
-          <span className="mx-2">/</span>
-          <span className="text-navy dark:text-white">Formation</span>
-        </div>
-      </div>
-
-      {/* ---------- HERO ---------- */}
-      <section className="relative overflow-hidden bg-navy px-4 py-12 text-white dark:bg-slate-950 md:px-8 md:py-16">
-        <div
-          className="pointer-events-none absolute -right-16 -top-10 h-56 w-56 rotate-12 bg-white/5 md:h-72 md:w-72"
-          aria-hidden="true"
-        />
-        <div className="relative mx-auto max-w-6xl">
-          <h1 className="max-w-2xl font-serif text-3xl font-bold md:text-5xl">
-             L'Excellence par la Transmission
-          </h1>
-          <p className="mt-4 max-w-xl text-sm text-white/70 md:text-base">
-             Développez les compétences critiques de demain avec les
-             programmes de formation stratégique et opérationnelle en entreprise de Mebusco SARL 
-          </p>
-        </div>
-      </section>
-
-
-
-      {/* ---------- SÉMINAIRE : PROCHAINE SESSION OUVERTE ----------*/}
-          
-      {nextSession.active && (
-        <div className="px-4 pt-10 md:px-8 seminaire" data-reveal="zoom">
-          <div className=" animate-pulse group relative mx-auto max-w-3xl overflow-hidden rounded-2xl border-2 border-carmin bg-navy p-6 shadow-[0_0_25px_-5px_rgba(200,17,46,0.5)] transition-shadow duration-500 hover:shadow-[0_0_35px_-5px_rgba(200,17,46,0.7)] dark:bg-slate-950 md:p-8">
-
-            <span
-              className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-carmin/25 blur-2xl"
-              aria-hidden="true"
-            />
-
-            <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-              <div>
-                <span className="inline-flex items-center gap-2 rounded-full bg-carmin/15 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-carmin">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-carmin opacity-75" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-carmin" />
-                  </span>
-                  Session ouverte aux préinscriptions
-                </span>
-
-                <h3 className="mt-3 text-xl font-bold text-white md:text-2xl">
-                  {nextSession.title}
-                </h3>
-
-                <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/80">
-                  <span className="flex items-center gap-2">
-                    <Calendar className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
-                    {nextSession.date}
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <Clock className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
-                    {nextSession.duree}
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <MapPin className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
-                    {nextSession.lieu}
-                  </span>
-                </div>
-
-                <p className="mt-3 text-sm font-bold text-white">
-                  {nextSession.price} par participant
-                </p>
-              </div>
-
-            <div className="flex flex-col">
-              <Link
-                to={seminar.path}
-                className="group/btn flex shrink-0 items-center justify-center gap-2 rounded-xl bg-carmin px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:brightness-110"
-              >
-                Voir le programme
-                <ArrowRight
-                  className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1"
-                  strokeWidth={2}
-                />
-              </Link>
-                       {/* lien de consultation du document pdf de  */}
-                   <a
-                     href="/flyer_seminaire.jpeg"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className="mt-8 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
-                   >
-              <FileDown className="h-5 w-5" strokeWidth={1.8} />
-              Consulter le dépliant du séminaire
-            </a>
-
-           </div>
-
-
-
-            </div>
-          </div>
-          <p className="mt-3 text-center text-xs text-white/60 md:text-sm">
-           Une demande via le site est une préinscription, sans paiement ni place garantie.
-          </p>
-        </div>
-      )}
-
-      {/* ---------- CITATIONS ---------- */}
-      <div className="bg-parchemin px-4 py-10 text-center dark:bg-slate-800 md:px-8">
-        <div className="mx-auto max-w-2xl space-y-8">
-          <div>
-            <p className="font-serif text-lg italic text-navy dark:text-white md:text-xl">
-              « Cherchez la connaissance du berceau à la tombe »
-            </p>
-            <span className="mx-auto mt-3 block h-0.5 w-10 bg-carmin" />
-          </div>
-        </div>
-      </div>
-
-      {/* ---------- NOS FORMATS ---------- */}
-      <div className="mx-auto max-w-6xl px-4 py-10 md:px-8">
-        <h2 className="text-xl font-bold text-navy dark:text-white md:text-2xl">
-          Nos Formations
-        </h2>
-        <span className="mt-2 block h-1 w-14 bg-carmin" />
-
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-
-          {/* Carte "Packages" */}
-
-          <div className="rounded-2xl bg-white p-6 transition-all duration-300 hover:-translate-4 drop-shadow-black drop-shadow-xl dark:bg-slate-900">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-parchemin dark:bg-slate-800">
-              <PackagesIcon className="h-5 w-5 text-navy dark:text-white" strokeWidth={1.6} />
-            </span>
-            <h3 className="mt-4 text-lg font-bold text-navy dark:text-white">
-              {formats.packages.title}
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-              {formats.packages.description}
-            </p>
-            <ul className="mt-4 space-y-2.5">
-              {formats.packages.items.map((item) => (
-                <li key={item} className="flex items-center gap-2.5 text-sm text-slate-700 dark:text-slate-200">
-                  <CircleCheck className="h-4 w-4 shrink-0 text-carmin" strokeWidth={1.8} />
-                  {item}
-                </li>
-              ))}
-            </ul>
-
-          </div>
-
-          {/* Carte "Sur-mesure" */}
-          <div className="rounded-2xl bg-navy p-6 dark:bg-slate-950 transition-all duration-300 hover:scale-95 drop-shadow-black drop-shadow-xl">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10">
-              <SurMesureIcon className="h-5 w-5 text-white" strokeWidth={1.6} />
-            </span>
-            <h3 className="mt-4 text-lg font-bold text-white">
-              {formats.surMesure.title}
-            </h3>
-            <p className="mt-2 text-sm leading-relaxed text-white/60">
-              {formats.surMesure.description}
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {formats.surMesure.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white/80"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-            <Link
-              to="/contact"
-              className="mt-6 block bg-carmin py-3 rounded-xl text-center text-xs font-bold uppercase tracking-wide text-white hover:brightness-120 "
-            >
-              {formats.surMesure.ctaLabel}
+        {/* ---------- FIL D'ARIANE ---------- */}
+        <div className="border-b border-slate-100 bg-white px-4 py-3 dark:border-slate-800 dark:bg-slate-900 md:px-8">
+          <div className="mx-auto max-w-6xl text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
+            <Link to="/" className="hover:text-carmin">
+              Accueil
             </Link>
+            <span className="mx-2">/</span>
+            <span className="text-navy dark:text-white">Formation</span>
           </div>
         </div>
-      </div>
 
-      {/* ---------- MÉTHODOLOGIE ---------- */}
-      <div className="bg-parchemin px-4 py-14 dark:bg-slate-800 md:px-8">
-        <div className="mx-auto max-w-6xl text-center">
-          <h2 className="font-serif text-xl font-bold text-navy dark:text-white md:text-2xl">
-            Notre Méthodologie
-          </h2>
-          <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
-            Une approche centrée sur l'humain et la performance.
-          </p>
-        </div>
+        {/* ---------- HERO ---------- */}
+        <section className="relative overflow-hidden bg-navy px-4 py-12 text-white dark:bg-slate-950 md:px-8 md:py-16">
+          <div
+            className="pointer-events-none absolute -right-16 -top-10 h-56 w-56 rotate-12 bg-white/5 md:h-72 md:w-72"
+            aria-hidden="true"
+          />
+          <div className="relative mx-auto max-w-6xl">
+            <h1 className="max-w-2xl font-serif text-3xl font-bold md:text-5xl">
+              L'Excellence par la Transmission
+            </h1>
+            <p className="mt-4 max-w-xl text-sm text-white/70 md:text-base">
+              Développez les compétences critiques de demain avec les
+              programmes de formation stratégique et opérationnelle en entreprise de Mebusco SARL
+            </p>
+          </div>
+        </section>
 
-        <div className="mx-auto mt-8 max-w-3xl space-y-6">
-          {methodology.map((step) => {
-            const Icon = step.icon;
-            return (
-              <div key={step.key} className="flex items-start gap-4">
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm dark:bg-slate-900">
-                  <Icon className="h-5 w-5 text-navy dark:text-white" strokeWidth={1.6} />
-                </span>
+
+
+        {/* ---------- SÉMINAIRE : PROCHAINE SESSION OUVERTE ----------*/}
+
+        {nextSession.active && (
+          <div className="px-4 pt-10 md:px-8 seminaire" data-reveal="zoom">
+            <div className=" animate-pulse group relative mx-auto max-w-3xl overflow-hidden rounded-2xl border-2 border-carmin bg-navy p-6 shadow-[0_0_25px_-5px_rgba(200,17,46,0.5)] transition-shadow duration-500 hover:shadow-[0_0_35px_-5px_rgba(200,17,46,0.7)] dark:bg-slate-950 md:p-8">
+
+              <span
+                className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-carmin/25 blur-2xl"
+                aria-hidden="true"
+              />
+
+              <div className="relative flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-wide text-navy dark:text-white">
-                    {step.title}
-                  </p>
-                  <p className="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                    {step.description}
+                  <span className="inline-flex items-center gap-2 rounded-full bg-carmin/15 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-carmin">
+                    <span className="relative flex h-2 w-2">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-carmin opacity-75" />
+                      <span className="relative inline-flex h-2 w-2 rounded-full bg-carmin" />
+                    </span>
+                    Session ouverte aux préinscriptions
+                  </span>
+
+                  <h3 className="mt-3 text-xl font-bold text-white md:text-2xl">
+                    {nextSession.title}
+                  </h3>
+
+                  <div className="mt-4 flex flex-wrap gap-x-6 gap-y-3 text-sm text-white/80">
+                    <span className="flex items-center gap-2">
+                      <Calendar className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
+                      {nextSession.date}
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <Clock className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
+                      {nextSession.duree}
+                    </span>
+                    <span className="flex items-center gap-2">
+                      <MapPin className="h-4.5 w-4.5 shrink-0 text-carmin" strokeWidth={1.8} />
+                      {nextSession.lieu}
+                    </span>
+                  </div>
+
+                  <p className="mt-3 text-sm font-bold text-white">
+                    {nextSession.price} par participant
                   </p>
                 </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
 
-      {/* ---------- IMAGE + CITATION ---------- */}
-      <div className="relative hover:duration-300 transition-all hover:scale-101">
-        {/* Remplace par la vraie photo (asset non fourni) */}
-        <img
-          src="/formation.jpeg"
-          alt="Session de formation Mebusco"
-          className="h-64 w-full object-cover md:h-96 "
-        />
-        <div className="absolute inset-0 flex items-center justify-center contrast-75 hover:contrast-50 hover:duration-300 transition-all bg-navy/60 px-6">
-          <p className="max-w-lg text-center font-serif text-lg italic text-white md:text-2xl">
-            « Le savoir est le seul capital qui s'accroît lorsqu'on le
-            partage. »
-          </p>
+                <div className="flex flex-col">
+                  <Link
+                    to={seminar.path}
+                    className="group/btn flex shrink-0 items-center justify-center gap-2 rounded-xl bg-carmin px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:brightness-110"
+                  >
+                    Voir le programme
+                    <ArrowRight
+                      className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1"
+                      strokeWidth={2}
+                    />
+                  </Link>
+                  
+                  {/* lien de consultation du document pdf de  */}
+
+                  <a
+                    href="/flyer_seminaire.jpeg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
+                  >
+                    <FileDown className="h-5 w-5" strokeWidth={1.8} />
+                    Consulter le dépliant du séminaire
+                  </a>
+               
+                   {/* document TDR(Terme De Reference) */}
+
+                  <a
+                    href="/TDR_SEMINAIRE_HOTEL_CONCORDE_YAOUNDE_CORRIGES_02_03_DECEMBRE_2026.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
+                  >
+                    <FileDown className="h-5 w-5" strokeWidth={1.8} />
+                    Consulter et Télécharger les TDR
+                  </a>
+
+                       
+                    {/* document  batir des generation */}
+                  <a
+                    href="/BATIR_POUR_LES_GENERATIONS_VERSION_COMMERCIALE_FINALE.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 flex items-center  gap-2 text-xs font-bold uppercase text-wrap text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
+                  >
+                    <FileDown className="h-5 w-5" strokeWidth={1.8} />
+                     consulter le document Batir pour les générations
+                  </a>
+                   
+
+                  
+                </div>
+
+
+
+              </div>
+            </div>
+            <p className="mt-3 text-center text-xs text-white/60 md:text-sm">
+              Une demande via le site est une préinscription, sans paiement ni place garantie.
+            </p>
+          </div>
+        )}
+
+        {/* ---------- CITATIONS ---------- */}
+        <div className="bg-parchemin px-4 py-10 text-center dark:bg-slate-800 md:px-8">
+          <div className="mx-auto max-w-2xl space-y-8">
+            <div>
+              <p className="font-serif text-lg italic text-navy dark:text-white md:text-xl">
+                « Cherchez la connaissance du berceau à la tombe »
+              </p>
+              <span className="mx-auto mt-3 block h-0.5 w-10 bg-carmin" />
+            </div>
+          </div>
         </div>
-      </div>
+
+        {/* ---------- NOS FORMATS ---------- */}
+        <div className="mx-auto max-w-6xl px-4 py-10 md:px-8">
+          <h2 className="text-xl font-bold text-navy dark:text-white md:text-2xl">
+            Nos Formations
+          </h2>
+          <span className="mt-2 block h-1 w-14 bg-carmin" />
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+
+            {/* Carte "Packages" */}
+
+            <div className="rounded-2xl bg-white p-6 transition-all duration-300 hover:-translate-4 drop-shadow-black drop-shadow-xl dark:bg-slate-900">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-parchemin dark:bg-slate-800">
+                <PackagesIcon className="h-5 w-5 text-navy dark:text-white" strokeWidth={1.6} />
+              </span>
+              <h3 className="mt-4 text-lg font-bold text-navy dark:text-white">
+                {formats.packages.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                {formats.packages.description}
+              </p>
+              <ul className="mt-4 space-y-2.5">
+                {formats.packages.items.map((item) => (
+                  <li key={item} className="flex items-center gap-2.5 text-sm text-slate-700 dark:text-slate-200">
+                    <CircleCheck className="h-4 w-4 shrink-0 text-carmin" strokeWidth={1.8} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+            </div>
+
+            {/* Carte "Sur-mesure" */}
+            <div className="rounded-2xl bg-navy p-6 dark:bg-slate-950 transition-all duration-300 hover:scale-95 drop-shadow-black drop-shadow-xl">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10">
+                <SurMesureIcon className="h-5 w-5 text-white" strokeWidth={1.6} />
+              </span>
+              <h3 className="mt-4 text-lg font-bold text-white">
+                {formats.surMesure.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-white/60">
+                {formats.surMesure.description}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {formats.surMesure.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-white/80"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <Link
+                to="/contact"
+                className="mt-6 block bg-carmin py-3 rounded-xl text-center text-xs font-bold uppercase tracking-wide text-white hover:brightness-120 "
+              >
+                {formats.surMesure.ctaLabel}
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* ---------- MÉTHODOLOGIE ---------- */}
+        <div className="bg-parchemin px-4 py-14 dark:bg-slate-800 md:px-8">
+          <div className="mx-auto max-w-6xl text-center">
+            <h2 className="font-serif text-xl font-bold text-navy dark:text-white md:text-2xl">
+              Notre Méthodologie
+            </h2>
+            <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+              Une approche centrée sur l'humain et la performance.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-8 max-w-3xl space-y-6">
+            {methodology.map((step) => {
+              const Icon = step.icon;
+              return (
+                <div key={step.key} className="flex items-start gap-4">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm dark:bg-slate-900">
+                    <Icon className="h-5 w-5 text-navy dark:text-white" strokeWidth={1.6} />
+                  </span>
+                  <div>
+                    <p className="text-sm font-bold uppercase tracking-wide text-navy dark:text-white">
+                      {step.title}
+                    </p>
+                    <p className="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* ---------- IMAGE + CITATION ---------- */}
+        <div className="relative hover:duration-300 transition-all hover:scale-101">
+          {/* Remplace par la vraie photo (asset non fourni) */}
+          <img
+            src="/formation.jpeg"
+            alt="Session de formation Mebusco"
+            className="h-64 w-full object-cover md:h-96 "
+          />
+          <div className="absolute inset-0 flex items-center justify-center contrast-75 hover:contrast-50 hover:duration-300 transition-all bg-navy/60 px-6">
+            <p className="max-w-lg text-center font-serif text-lg italic text-white md:text-2xl">
+              « Le savoir est le seul capital qui s'accroît lorsqu'on le
+              partage. »
+            </p>
+          </div>
+        </div>
 
       </main>
 
-      <Whatsapp/>
+      <Whatsapp />
       <Footer />
     </div>
   );

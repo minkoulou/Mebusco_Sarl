@@ -7,7 +7,6 @@ import './index.css'
 import Accueil from './pages/accueil.jsx'
 import Comprehension from './pages/comprehension.jsx'
 import {ApprocheClassique} from './pages/approche-classique.jsx'
-// import CultoEndogene from './pages/culto-endogene.jsx'
 import Formation from './pages/formation.jsx'
 import Contact from './pages/contact.jsx'
 import ApprocheMetaphysique from  './pages/Approchemetaphysique.jsx'
@@ -16,6 +15,8 @@ import SeminaireEntreprisesFamiliales from './pages/seminaire-entreprises-famili
 import APropos from './pages/a-propos.jsx'
 import References from './pages/references.jsx'
 import Confidentialite from './pages/confidentialite'
+import {InvestirDepuisEtranger} from './pages/investiguer.jsx'
+import {DevelopperActiviteCameroun} from './pages/dev-camerounais.jsx'
 import { NOTFOUND } from './pages/NotFound.jsx'
 import { PageAnimations } from './components/pageAnimations.jsx'
 import './index.css'
@@ -26,6 +27,7 @@ const routes=createBrowserRouter([
  {
   // Route parente : animations d'ouverture et de scroll sur toutes les pages
   element:<PageAnimations/>,
+
   children:[
 
   {
@@ -78,7 +80,6 @@ const routes=createBrowserRouter([
     element:<Formation/>
   },
  
- 
    {
     path:"/contact",
     element:<Contact/>
@@ -87,6 +88,16 @@ const routes=createBrowserRouter([
   {
     path:"/confidentialite",
     element:<Confidentialite/>
+  },
+
+  {
+    path:"/investiguer",
+    element:<InvestirDepuisEtranger/>
+  },
+
+  {
+    path:"/developper-activite-cmr",
+    element:<DevelopperActiviteCameroun/>
   },
   ]
  }

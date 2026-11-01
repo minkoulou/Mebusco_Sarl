@@ -57,12 +57,10 @@ export default function Accueil() {
             <span className="inline-block bg-carmin px-3 py-1.5 text-xs font-bold uppercase tracking-wider">
               Conseil aux entrepreneurs et dirigeants
             </span>
-
             <h1 className="mt-6 text-4xl font-extrabold uppercase leading-[1.1] tracking-tight md:text-5xl">
               Études, business plans et formations
             </h1>
 
-            {/* fioriture ornementale */}
 
             <div className="mt-5 flex items-center gap-3" aria-hidden="true">
               <span className="h-px w-10 bg-carmin/60" />
@@ -103,7 +101,11 @@ export default function Accueil() {
         {/* bandeau flyer de presentation du seminaire  */}
 
       <div className="w-full h- flex justify-center items-center pt-4">
-         <img src="/bandeauseminaire.jpeg" className="opacity-80 rounded-2xl"/>
+
+        <Link to="/formation">
+          <img src="/bandeauseminaire.jpeg" className="opacity-80 rounded-2xl"/>
+         </Link>
+    
       </div>
 
       </section>

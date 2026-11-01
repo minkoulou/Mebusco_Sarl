@@ -1,4 +1,4 @@
-import {Home,FileChartColumn,GraduationCap,Award,UserRound} from "lucide-react"
+import {Home,FileChartColumn,GraduationCap,Award,UserRound,Globe,Briefcase} from "lucide-react"
 
 export const navLinks = [
     {
@@ -31,6 +31,22 @@ export const navLinks = [
         shortLabel:"Références",
         path:"/references",
         icon:Award
+    },
+
+    {
+        Key:"etranger",
+        label:"Diaspora",
+        shortLabel:"Diaspora",
+        path:"/investiguer",
+        icon:Globe
+    },
+
+      {
+        Key:"PME",
+        label:"PME INTERNATIONALES",
+        shortLabel:"PME INTERNATIONALES",
+        path:"/developper-activite-cmr",
+        icon:Briefcase
     },
 
     {

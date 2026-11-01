@@ -81,16 +81,43 @@ export default function SeminaireEntreprisesFamiliales() {
               </span>
             </div>
 
-            {/*Lien consultation du dssier de reference pdf */}
-               <a
-                     href="/TDR_SEMINAIRE_HOTEL_CONCORDE_YAOUNDE_CORRIGES_02_03_DECEMBRE_2026.pdf"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className="mt-8 flex items-center gap-2 text-xs font-bold text-shadow-amber-50 uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
-                   >
-              <FileDown className="h-5 w-5" strokeWidth={1.8} />
-              Consulter les termes de référence (PDF)
-            </a>
+            {/*Lien consultation du dossier de terme de reference pdf */}
+                                {/* lien de consultation du document pdf de  */}
+                  <a
+                    href="/flyer_seminaire.jpeg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
+                  >
+                    <FileDown className="h-5 w-5" strokeWidth={1.8} />
+                    Consulter le dépliant du séminaire
+                  </a>
+               
+                   {/* document TDR(Terme De Reference) */}
+
+                  <a
+                    href="/TDR_SEMINAIRE_HOTEL_CONCORDE_YAOUNDE_CORRIGES_02_03_DECEMBRE_2026.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wide text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
+                  >
+                    <FileDown className="h-5 w-5" strokeWidth={1.8} />
+                    Consulter et Télécharger les TDR
+                  </a>
+
+                       
+                    {/* document  batir des generation */}
+                  <a
+                    href="/BATIR_POUR_LES_GENERATIONS_VERSION_COMMERCIALE_FINALE.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 flex items-center justify-center ml-12 md:ml-25 gap-2 text-xs font-bold uppercase text-wrap text-white/80 underline decoration-carmin decoration-2 underline-offset-4 hover:text-white"
+                  >
+                    <FileDown className="h-5 w-5" strokeWidth={1.8} />
+                     consulter le document Batir pour les générations
+                  </a>
+                   
+
 
           </div>
 
